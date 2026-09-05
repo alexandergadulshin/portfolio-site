@@ -8,8 +8,8 @@ export default function Home() {
       <p className="lede">
         I&rsquo;m {site.name}, a designer and builder working with
         owner-operators. At Syrex Consulting I built a UGC video generator that
-        produced {site.gmv} in GMV for client businesses. Your business gets the
-        same standard of work.
+        produced <strong className="figure">{site.gmv}</strong> in GMV for
+        client businesses. Your business gets the same standard of work.
       </p>
       <div className="cta-row">
         <Link href="/contact" className="cta">
@@ -20,17 +20,23 @@ export default function Home() {
 
       <section className="section">
         <h2>What I do</h2>
-        <h3>Website design and builds</h3>
-        <p>
-          A fast site with one clear action per page. I design it, build it in
-          Next.js, and hand you the keys with documentation you can follow
-          without me.
-        </p>
-        <h3>AI tool installation</h3>
-        <p>
-          I find the tools that fit your workflow, set them up, and train you
-          until you run them on your own.
-        </p>
+        <div className="cards">
+          <div className="card">
+            <h3>Website design and builds</h3>
+            <p>
+              A fast site with one clear action per page. I design and build
+              it in Next.js, then hand you the keys with documentation you can
+              follow without me.
+            </p>
+          </div>
+          <div className="card">
+            <h3>AI tool installation</h3>
+            <p>
+              I find the tools that fit your workflow and set them up. Then I
+              train you until you run them on your own.
+            </p>
+          </div>
+        </div>
         <p>
           <Link href="/services">See both services in detail</Link>
         </p>
@@ -46,12 +52,15 @@ export default function Home() {
               </Link>
             </h3>
             <p>
-              {site.gmv} in GMV generated for client businesses. The case study
-              covers the problem, the build, and the result.
+              <span className="figure">{site.gmv}</span> in GMV generated for
+              client businesses. The case study shows the problem and how the
+              build solved it.
             </p>
           </li>
           <li className="pending">
-            <h3>Client website builds</h3>
+            <h3>
+              <Link href="/work/client-websites">Client website builds</Link>
+            </h3>
             <p>
               Case study in progress. I am collecting screenshots and client
               permissions now, and the full write-up goes live soon.
@@ -85,14 +94,14 @@ export default function Home() {
               </Link>
             </h3>
             <p>
-              Two communities, two interface strategies, and what each one
-              teaches about writing for an audience.
+              Two communities take different approaches to their interfaces.
+              Each one teaches something about writing for an audience.
             </p>
           </li>
         </ul>
       </section>
 
-      <section className="section">
+      <section className="panel">
         <h2>Start with a call</h2>
         <p>
           Tell me about your business and I will tell you what I would build

@@ -11,7 +11,7 @@ export default function NotFound() {
         full map of the site.
       </p>
       <div className="cta-row">
-        <Link href="/" className="cta" style={{ background: "var(--gold)" }}>
+        <Link href="/" className="button button-gold">
           Go to the home page
         </Link>
         <Link href="/contact">Or book a call</Link>

@@ -11,7 +11,7 @@ export default function Work() {
         Results first, process second. Each case study opens with the number
         that matters and then shows how the build produced it.
       </p>
-      <ul className="proof-list" style={{ marginTop: "2.5rem" }}>
+      <ul className="proof-list index">
         <li>
           <h3>
             <Link href="/work/syrex">
@@ -19,8 +19,9 @@ export default function Work() {
             </Link>
           </h3>
           <p>
-            {site.gmv} in GMV generated for client businesses. The full story
-            of the problem, the build, and the result.
+            <span className="figure">{site.gmv}</span> in GMV generated for
+            client businesses. The full story of the problem and how the build
+            solved it.
           </p>
         </li>
         <li className="pending">

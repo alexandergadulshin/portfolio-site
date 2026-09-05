@@ -10,7 +10,7 @@ export default function Writing() {
         Copy carries the sale on a small business site. These papers show the
         analysis behind the voice on this one.
       </p>
-      <ul className="proof-list" style={{ marginTop: "2.5rem" }}>
+      <ul className="proof-list index">
         <li>
           <h3>
             <Link href="/writing/myanimelist-analysis">
@@ -29,8 +29,8 @@ export default function Writing() {
             </Link>
           </h3>
           <p>
-            Two communities, two interface strategies, and what each one
-            teaches about writing for an audience.
+            Two communities take different approaches to their interfaces.
+            Each one teaches something about writing for an audience.
           </p>
         </li>
       </ul>

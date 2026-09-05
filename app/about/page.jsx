@@ -12,8 +12,8 @@ export default function About() {
         websites and AI tools for small businesses.
       </p>
       <div className="todo">
-        [Two or three sentences on your background: how you started building,
-        your work at Syrex Consulting, and what you want to build next.]
+        [Two or three sentences on your background. Say how you started
+        building and where the Syrex work fits.]
       </div>
       <p>
         The writing coursework is not a detour from the technical work. The
@@ -21,12 +21,15 @@ export default function About() {
         and what it asks the visitor to do. I train for that part in the
         classroom and practice the build side on real projects.
       </p>
-      <h2>For recruiters and hiring managers</h2>
-      <p>
-        The <Link href="/work/syrex">Syrex case study</Link> is the fastest
-        read on how I work. Email me at{" "}
-        <a href={`mailto:${site.email}`}>{site.email}</a> for a resume.
-      </p>
+
+      <section className="section">
+        <h2>For recruiters and hiring managers</h2>
+        <p>
+          The <Link href="/work/syrex">Syrex case study</Link> is the fastest
+          read on how I work. Email me at{" "}
+          <a href={`mailto:${site.email}`}>{site.email}</a> for a resume.
+        </p>
+      </section>
     </>
   );
 }

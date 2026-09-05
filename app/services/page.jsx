@@ -15,8 +15,8 @@ export default function Services() {
         <h2>Website design and builds</h2>
         <p>
           Most small business sites try to say too much. I build sites that
-          load fast, read clean, and point each page at one action, whether
-          that action is a booking, a call, or a sale.
+          load fast and point each page at one action, whether that action is
+          a booking or a sale.
         </p>
         <h3>What you get</h3>
         <ul className="plain">
@@ -32,7 +32,8 @@ export default function Services() {
         <p>
           AI tools save owners time on quotes, follow-ups, content, and
           bookkeeping. Choosing them and wiring them in takes time most owners
-          do not have. I do the choosing, the setup, and the training.
+          do not have. I choose the tools and set them up. Then I train you to
+          run them.
         </p>
         <h3>What you get</h3>
         <ul className="plain">
@@ -55,12 +56,12 @@ export default function Services() {
             and a date.
           </li>
           <li>
-            <strong>Build.</strong> I build, you review, and we adjust until it
+            <strong>Build.</strong> I build and you review. We adjust until it
             fits.
           </li>
           <li>
-            <strong>Handoff.</strong> You get the keys, the docs, and a
-            training session.
+            <strong>Handoff.</strong> You get the keys and a training session,
+            so you can run it yourself.
           </li>
         </ol>
         <div className="cta-row">

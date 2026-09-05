@@ -3,20 +3,38 @@ import Link from "next/link";
 import { site } from "../lib/site";
 import SiteNav from "../components/SiteNav";
 
+const title = `${site.name}: web design and AI tools for small businesses`;
+const description =
+  "Freelance website design and AI tool installation for small business owner-operators.";
+
 export const metadata = {
+  metadataBase: new URL(site.url),
   title: {
-    default: `${site.name}: web design and AI tools for small businesses`,
+    default: title,
     template: `%s | ${site.name}`,
   },
-  description:
-    "Freelance website design, builds, and AI tool installation for small business owner-operators.",
+  description,
+  openGraph: {
+    type: "website",
+    siteName: site.name,
+    title,
+    description,
+    url: "/",
+  },
+};
+
+export const viewport = {
+  themeColor: "#191613",
 };
 
 function Footer() {
   return (
     <footer className="site-footer">
       <div className="wrap">
-        <span>{site.name}</span>
+        <span className="footer-brand">
+          <span className="hub" aria-hidden="true"></span>
+          {site.name}
+        </span>
         <nav className="footer-nav" aria-label="Footer">
           <Link href="/work">Work</Link>
           <Link href="/services">Services</Link>

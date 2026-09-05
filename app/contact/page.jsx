@@ -12,7 +12,7 @@ export default function Contact() {
       </p>
       <p>
         Email me at <a href={`mailto:${site.email}`}>{site.email}</a> with a
-        sentence or two about your business. A long pitch is not required.
+        sentence or two about your business. You do not need a long pitch.
       </p>
       {site.bookingUrl ? (
         <div className="cta-row">
