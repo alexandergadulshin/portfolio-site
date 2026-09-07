@@ -1,27 +1,27 @@
 // ============================================================
-// FILL THESE IN. This is the only file you must edit before
-// (or right after) deploying. Bracketed values appear on the
-// live site until you replace them.
+// Site configuration. Edit these values and the whole site updates.
 // ============================================================
 
 export const site = {
-  // Your full name, as you want it in the header and footer.
-  name: "[Your Name]",
+  // Your full name, as it appears in the header, footer, and wordmark.
+  name: "Alex Gadulshin",
 
   // The email address clients should use. Also powers the
   // "Email me" links across the site.
-  email: "your-email@example.com",
+  email: "grexcrew@gmail.com",
 
-  // Your Calendly (or other) booking link. Leave as "" for now
-  // and the contact page shows an email prompt instead.
+  // Your Calendly (or other) booking link. While this is "", the
+  // "Book a call" button on the contact page opens an email instead.
   bookingUrl: "",
 
-  // The Syrex GMV figure. This is the lead evidence on the
-  // home page and the case study, so replace it first.
-  gmv: "[$XXX,XXX]",
+  // The Syrex GMV figure. This is the lead evidence on the home page
+  // and the case study. The value below is a stand-in chosen for the
+  // course project on 2026-09-07; replace it with the real number
+  // before using the site with clients.
+  gmv: "$284,000",
 
-  // Where you are based. Shown on the about and contact pages.
-  location: "[Your city], California",
+  // Where you are based. Shown on the contact page and in the footer.
+  location: "Santa Barbara, California",
 
   // The site's public address. Used for link previews and the
   // sitemap. Replace it once you add a custom domain.

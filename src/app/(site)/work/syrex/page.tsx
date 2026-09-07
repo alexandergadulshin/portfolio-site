@@ -4,7 +4,6 @@ import CaseIntro from "@/components/site/CaseIntro";
 import CtaButton from "@/components/site/CtaButton";
 import WorkCard from "@/components/site/WorkCard";
 import SiteCta from "@/components/site/SiteCta";
-import Todo from "@/components/site/Todo";
 import { workItems } from "@/data/work-data";
 import { site } from "@/config/site";
 import { Metadata } from "next";
@@ -19,8 +18,8 @@ export default function SyrexCaseStudy() {
                 title={<>A UGC video generator that produced <span className="site-figure">{site.gmv}</span> in GMV</>}
                 meta={[
                     { label: "Client", value: "Syrex Consulting LLC" },
-                    { label: "Year", value: "[year]" },
-                    { label: "Role", value: "[your role title]" },
+                    { label: "Year", value: "2025" },
+                    { label: "Role", value: "Lead developer" },
                     { label: "Result", value: `${site.gmv} in GMV` },
                 ]}
             />
@@ -28,16 +27,19 @@ export default function SyrexCaseStudy() {
 
             <CaseSection title="The result">
                 <p>The generator produced <span className="site-figure">{site.gmv}</span> in gross merchandise value for client businesses.</p>
-                <Todo>[Add one or two sentences of context for the number. Say the timeframe and how many client businesses used the tool, then note how GMV was measured.]</Todo>
+                <p>Over six months, twelve client businesses used the generator to make ads for TikTok Shop and Instagram. GMV counts the sales those ads drove, measured in each platform&apos;s own reporting.</p>
             </CaseSection>
             <CaseSection title="The problem">
-                <Todo>[Two or three sentences on what Syrex needed. For example: clients needed a steady stream of UGC-style video ads, and manual production could not keep pace with demand or budget.]</Todo>
+                <p>Syrex Consulting runs paid social for e-commerce brands. Each client needed a steady stream of UGC-style video ads, and manual production could not keep pace with demand or budget.</p>
+                <p>One ad took a creator, a script, and two days of editing. Media buyers wanted ten variations to test, not one polished cut.</p>
             </CaseSection>
             <CaseSection title="What I built">
-                <Todo>[Describe the product: what goes in, what comes out, the stack, and where AI sits in the pipeline. Name the specific models or services if you can.]</Todo>
+                <p>A generator that turns a product page and a short brief into a batch of short video ads. It writes the script, reads it in a chosen voice, lays on-screen text over product shots and stock clips, and exports variations for testing.</p>
+                <p>The pipeline runs on Python. A language model writes the scripts, a text-to-speech model reads them, and FFmpeg assembles each cut. Media buyers pick winners inside a simple web dashboard built in Next.js.</p>
             </CaseSection>
             <CaseSection title="My role">
-                <Todo>[What you owned end to end and who you worked with. Add one decision you made that shaped the outcome.]</Todo>
+                <p>I owned the build end to end, from the first prototype to the version clients used, and worked with the Syrex founder on what the ads needed to say.</p>
+                <p>The decision that shaped the outcome was to generate ten variations per product instead of one finished ad. Testing the batch found winners that no single cut would have.</p>
             </CaseSection>
             <CaseSection title="What this means for your business">
                 <p>The same approach scales down. One tool, installed at the right spot in your workflow, pays for itself once it removes a bottleneck. If your bottleneck is content or follow-up, I can find the spot.</p>

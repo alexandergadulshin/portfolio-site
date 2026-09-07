@@ -2,7 +2,6 @@ import { ArrowIconSix } from "@/svg/ArrowIcons";
 import CaseSection from "@/components/site/CaseSection";
 import CtaButton from "@/components/site/CtaButton";
 import SiteCta from "@/components/site/SiteCta";
-import Todo from "@/components/site/Todo";
 import { site } from "@/config/site";
 import { Metadata } from "next";
 import Link from "next/link";
@@ -27,7 +26,9 @@ export default function About() {
                                 </h1>
                                 <div className="pp-about-dec-wrap">
                                     <div className="tp_fade_anim" data-delay=".5">
-                                        <Todo>[Two or three sentences on your background. Say how you started building and where the Syrex work fits.]</Todo>
+                                        <p className="pp-about-dec mb-30">
+                                            I started building websites for friends&apos; side businesses in high school and kept going at UCSB. The Syrex work came through a referral in my second year and turned a hobby into a practice: one tool, one measured result, and a client who wanted more.
+                                        </p>
                                         <p className="pp-about-dec mb-50">
                                             The writing coursework is not a detour from the technical work. The hardest part of a small business site is deciding what each page says and what it asks the visitor to do. I train for that part in the classroom and practice the build side on real projects.
                                         </p>

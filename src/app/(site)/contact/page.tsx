@@ -1,5 +1,4 @@
 import CtaButton from "@/components/site/CtaButton";
-import Todo from "@/components/site/Todo";
 import { site } from "@/config/site";
 import { Metadata } from "next";
 
@@ -27,18 +26,14 @@ export default function Contact() {
                                 <p>
                                     Email me at <a href={`mailto:${site.email}`}>{site.email}</a> with a sentence or two about your business. You do not need a long pitch.
                                 </p>
-                                {site.bookingUrl ? (
-                                    <div className="mt-30">
-                                        <a href={site.bookingUrl} className="tp-btn">
-                                            <span>
-                                                <span className="text-1">Book a call</span>
-                                                <span className="text-2">Book a call</span>
-                                            </span>
-                                        </a>
-                                    </div>
-                                ) : (
-                                    <Todo>[Add your Calendly or booking link in src/config/site.ts and a booking button appears here.]</Todo>
-                                )}
+                                <div className="mt-30">
+                                    <a href={site.bookingUrl || `mailto:${site.email}?subject=Book%20a%20call`} className="tp-btn">
+                                        <span>
+                                            <span className="text-1">Book a call</span>
+                                            <span className="text-2">Book a call</span>
+                                        </span>
+                                    </a>
+                                </div>
                                 <div className="mt-20">
                                     <CtaButton href={`mailto:${site.email}`} label="Email me" className="tp-btn tp-btn-grey" />
                                 </div>
