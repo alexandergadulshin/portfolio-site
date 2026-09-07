@@ -1,68 +1,13 @@
 /* ------------------------------------------------------------
-   Design tokens.
-   The palette carries the site map's logic onto the site:
-   gold marks identity and wayfinding (the Home hub), green is
-   reserved for one job only, the booking action (the dashed
-   green arc routes on the site map).
+   Site overrides, loaded after the Alpha template stylesheet
+   (app/vendor/alpha.css). The template supplies the layout, the
+   cream ground, the coral accent, and the icon circles. This file
+   adds the pieces the template does not have.
 ------------------------------------------------------------ */
-:root {
-  --ink: #191613;          /* warm charcoal ground */
-  --ink-raised: #221e19;   /* lifted surface */
-  --text: #ece6da;         /* warm off-white */
-  --text-muted: #b1a797;   /* secondary text */
-  --gold: #c9a24b;         /* identity, headings, links */
-  --gold-bright: #e0b95c;  /* link hover */
-  --green: #63b27f;        /* booking action only */
-  --green-press: #5aa473;
-  --rule: rgba(236, 230, 218, 0.16);
-  --rule-soft: rgba(236, 230, 218, 0.09);
-  --serif: "Source Serif 4", Georgia, "Times New Roman", serif;
-  --sans: system-ui, -apple-system, "Segoe UI", sans-serif;
-  --measure: 66ch;
-  --radius: 10px;
-}
 
-* {
-  box-sizing: border-box;
-}
-
-html {
-  color-scheme: dark;
-}
-
-body {
-  margin: 0;
-  background: var(--ink);
-  color: var(--text);
-  font-family: var(--serif);
-  font-size: 1.0625rem;
-  line-height: 1.65;
-  -webkit-font-smoothing: antialiased;
-  text-rendering: optimizeLegibility;
-}
-
-::selection {
-  background: var(--gold);
-  color: var(--ink);
-}
-
-/* Layout shell */
-.wrap {
-  max-width: 48rem;
-  margin: 0 auto;
-  padding: 0 1.25rem;
-}
-
-main.wrap {
-  padding-top: 3.5rem;
-  padding-bottom: 5rem;
-}
-
-@media (max-width: 640px) {
-  main.wrap {
-    padding-top: 2.5rem;
-    padding-bottom: 4rem;
-  }
+/* Google renamed the template's typeface; keep the old name as a fallback. */
+body, input, select, textarea, h1, h2, h3, h4, h5, h6 {
+  font-family: "Source Sans 3", "Source Sans Pro", sans-serif;
 }
 
 /* Skip link for keyboard users */
@@ -70,506 +15,166 @@ main.wrap {
   position: absolute;
   left: -999px;
   top: 0;
-  background: var(--gold);
-  color: var(--ink);
-  padding: 0.5rem 1rem;
-  font-family: var(--sans);
-  z-index: 10;
+  z-index: 20000;
+  background: #e89980;
+  color: #fff;
+  padding: 0.5em 1em;
+  border-radius: 0 0 6px 0;
 }
 
 .skip-link:focus {
-  left: 0.5rem;
-  top: 0.5rem;
-}
-
-/* Type scale */
-h1 {
-  font-size: clamp(2rem, 5vw, 2.9rem);
-  line-height: 1.12;
-  font-weight: 600;
-  letter-spacing: -0.015em;
-  margin: 0 0 1.25rem;
-  max-width: 22ch;
-  text-wrap: balance;
-}
-
-h2 {
-  font-size: 1.5rem;
-  line-height: 1.25;
-  font-weight: 600;
-  color: var(--gold);
-  margin: 3rem 0 0.9rem;
-  text-wrap: balance;
-}
-
-h3 {
-  font-size: 1.15rem;
-  line-height: 1.3;
-  font-weight: 600;
-  margin: 1.75rem 0 0.35rem;
-}
-
-p, li {
-  max-width: var(--measure);
-}
-
-p {
-  margin: 0 0 1rem;
-  text-wrap: pretty;
-}
-
-.lede {
-  font-size: 1.22rem;
-  line-height: 1.58;
-  color: var(--text);
-  max-width: 56ch;
-}
-
-.muted {
-  color: var(--text-muted);
-}
-
-.meta {
-  font-family: var(--sans);
-  font-size: 0.9rem;
-  color: var(--text-muted);
-  margin: -0.5rem 0 2rem;
-}
-
-/* A figure inside running text, always gold */
-.figure {
-  color: var(--gold);
-  font-weight: 600;
-  font-variant-numeric: tabular-nums;
-  white-space: nowrap;
-}
-
-/* Links */
-a {
-  color: var(--gold);
-  text-decoration: underline;
-  text-decoration-thickness: 1px;
-  text-underline-offset: 3px;
-}
-
-a:hover {
-  color: var(--gold-bright);
+  left: 0;
 }
 
 :focus-visible {
-  outline: 2px solid var(--gold-bright);
+  outline: 3px solid #e89980;
   outline-offset: 3px;
-  border-radius: 2px;
 }
 
-/* Buttons. .cta is the one green element: the booking action.
-   .button-gold is for wayfinding only (the 404 page). */
-.cta,
-.button {
-  display: inline-flex;
+/* Home page. The template keys these off body.landing; the body
+   element is shared here, so the home page sets classes itself. */
+.landing-banner {
+  margin-top: -3em;
+}
+
+.landing-main {
+  margin-top: -14em;
+}
+
+@media screen and (max-width: 840px) {
+  /* The template hides the fixed header and drops the page padding here. */
+  .landing-banner {
+    margin-top: 0;
+  }
+}
+
+@media screen and (max-width: 736px) {
+  .landing-main {
+    margin-top: 0;
+    padding: 0;
+  }
+}
+
+/* Cover: a colored panel where the template puts a photo */
+.cover {
+  display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-family: var(--sans);
-  font-size: 1rem;
-  font-weight: 600;
-  line-height: 1.2;
-  text-decoration: none;
-  padding: 0.75rem 1.4rem;
-  border-radius: 6px;
+  min-height: 13em;
+  padding: 2em;
+  color: #fff;
+  text-align: center;
 }
 
-.cta {
-  background: var(--green);
-  color: #14110d;
+.cover-coral {
+  background: linear-gradient(135deg, #e89980, #e4886a);
 }
 
-.cta:hover {
-  background: var(--green-press);
-  color: #14110d;
+.cover-mint {
+  background: linear-gradient(135deg, #7fcdb8, #62b9a1);
 }
 
-.button-gold {
-  background: var(--gold);
-  color: var(--ink);
+.cover-steel {
+  background: linear-gradient(135deg, #90b0ba, #7a9ea9);
 }
 
-.button-gold:hover {
-  background: var(--gold-bright);
-  color: var(--ink);
-}
-
-.cta-row {
-  display: flex;
-  align-items: center;
-  gap: 1.5rem;
-  flex-wrap: wrap;
-  margin: 2rem 0 1rem;
-}
-
-/* Header */
-.site-header {
-  border-bottom: 1px solid var(--rule);
-}
-
-.site-header .wrap {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 1rem 1.5rem;
-  flex-wrap: wrap;
-  padding-top: 1.1rem;
-  padding-bottom: 1.1rem;
-}
-
-.brand {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.6rem;
-  color: var(--text);
-  text-decoration: none;
-  font-weight: 600;
-  font-size: 1.05rem;
-}
-
-.brand:hover {
-  color: var(--text);
-}
-
-/* Gold disc: the Home hub from the site map, used as the mark */
-.hub {
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  background: var(--gold);
-  flex-shrink: 0;
-}
-
-.site-nav {
-  display: flex;
-  align-items: center;
-  gap: 1.25rem;
-  flex-wrap: wrap;
-  font-family: var(--sans);
-  font-size: 0.95rem;
-}
-
-.site-nav a {
-  color: var(--text);
-  text-decoration: none;
-  padding: 0.2rem 0;
-}
-
-.site-nav a:hover {
-  color: var(--gold-bright);
-}
-
-.site-nav .cta {
-  padding: 0.5rem 1rem;
-  font-size: 0.9rem;
-}
-
-.site-nav .cta:hover {
-  color: #14110d;
-}
-
-@media (max-width: 560px) {
-  .site-nav {
-    width: 100%;
-    justify-content: space-between;
-    gap: 0.6rem;
-    font-size: 0.9rem;
-  }
-}
-
-/* Orientation: the current section shows in gold (Podmajersky,
-   titles and wayfinding reassure the person they are in the
-   right place). */
-.site-nav a[aria-current="page"] {
-  color: var(--gold);
-  text-decoration: underline;
-  text-decoration-thickness: 1.5px;
-  text-underline-offset: 6px;
-}
-
-.site-nav a.cta[aria-current="page"] {
-  text-decoration: none;
-  color: #14110d;
-  outline: 2px solid var(--gold);
-  outline-offset: 2px;
-}
-
-/* Sections */
-.section {
-  margin-top: 3.5rem;
-  padding-top: 2.5rem;
-  border-top: 1px solid var(--rule);
-}
-
-.block {
-  margin-top: 2.5rem;
-}
-
-.section > h2:first-child,
-.block > h2:first-child,
-.panel > h2:first-child {
-  margin-top: 0;
-}
-
-/* Cards: raised surfaces for the two services */
-.cards {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
-  gap: 1rem;
-  margin: 1.5rem 0 1.25rem;
-}
-
-.card {
-  background: var(--ink-raised);
-  border: 1px solid var(--rule-soft);
-  border-radius: var(--radius);
-  padding: 1.35rem 1.4rem 1.25rem;
-}
-
-.card h3 {
-  margin: 0 0 0.5rem;
-}
-
-.card p {
-  margin: 0;
-  color: var(--text-muted);
-}
-
-/* Stat: the lead figure on a case study */
-.stat {
-  margin: 0.5rem 0 1.5rem;
-}
-
-.stat-figure {
+.cover-figure {
   display: block;
-  font-size: clamp(2.2rem, 6vw, 3.2rem);
-  line-height: 1.05;
+  font-size: 2.75em;
   font-weight: 600;
-  letter-spacing: -0.01em;
-  color: var(--gold);
-  font-variant-numeric: tabular-nums;
+  line-height: 1.1em;
+  letter-spacing: -0.02em;
 }
 
-.stat-label {
+.cover-label {
   display: block;
-  font-family: var(--sans);
-  font-size: 0.95rem;
-  color: var(--text-muted);
-  margin-top: 0.45rem;
+  margin-top: 0.6em;
+  font-size: 1em;
+  opacity: 0.92;
 }
 
-/* Panel: the closing invitation */
-.panel {
-  background: var(--ink-raised);
-  border: 1px solid var(--rule-soft);
-  border-radius: var(--radius);
-  padding: 2rem 1.75rem;
-  margin-top: 3.5rem;
-}
-
-.panel .cta-row {
-  margin-bottom: 0;
-}
-
-@media (max-width: 560px) {
-  .panel {
-    padding: 1.5rem 1.25rem;
-  }
-}
-
-/* Proof list: gold discs echo the site map's orbital nodes */
-.proof-list {
-  list-style: none;
-  margin: 1.5rem 0 0;
-  padding: 0;
-}
-
-.proof-list.index {
-  margin-top: 2.5rem;
-}
-
-.proof-list li {
-  position: relative;
-  padding-left: 1.6rem;
-  margin-bottom: 1.75rem;
-}
-
-.proof-list li::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0.55rem;
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  background: var(--gold);
-}
-
-.proof-list li.pending::before {
-  background: transparent;
-  border: 1.5px solid var(--text-muted);
-}
-
-.proof-list h3 {
-  margin: 0 0 0.25rem;
-}
-
-.proof-list h3 a {
-  text-decoration: none;
-}
-
-.proof-list h3 a:hover {
-  text-decoration: underline;
-}
-
-.proof-list p {
-  margin: 0;
-  color: var(--text-muted);
-}
-
-/* Simple lists on service pages */
-ul.plain {
-  padding-left: 1.3rem;
-  margin: 0.5rem 0 1.5rem;
-}
-
-ul.plain li {
-  margin-bottom: 0.45rem;
-  padding-left: 0.2rem;
-}
-
-ul.plain li::marker {
-  color: var(--gold);
-}
-
-ol.steps {
-  padding-left: 1.6rem;
-  margin: 0.5rem 0 1.5rem;
-}
-
-ol.steps li {
-  margin-bottom: 1rem;
-  padding-left: 0.3rem;
-}
-
-ol.steps li::marker {
-  color: var(--gold);
+/* A figure inside running text */
+.figure {
+  color: #e89980;
   font-weight: 600;
-  font-family: var(--sans);
-}
-
-ol.steps li strong {
-  display: block;
-}
-
-/* Long-form writing (the two papers) */
-.paper {
-  margin-top: 2rem;
-}
-
-.paper p {
-  margin-bottom: 1.1rem;
-}
-
-.paper h2 {
-  font-size: 1.3rem;
-  margin-top: 2.5rem;
-}
-
-.paper blockquote {
-  margin: 1.25rem 0;
-  padding: 0.2rem 0 0.2rem 1.1rem;
-  border-left: 2px solid var(--gold);
-  color: var(--text-muted);
-}
-
-.paper blockquote p:last-child {
-  margin-bottom: 0;
-}
-
-.works-cited {
-  list-style: none;
-  padding: 0;
-  margin: 1rem 0 0;
-}
-
-.works-cited li {
-  padding-left: 2em;
-  text-indent: -2em;
-  margin-bottom: 0.75rem;
-}
-
-.back {
-  margin-top: 3rem;
-  font-family: var(--sans);
-  font-size: 0.95rem;
+  white-space: nowrap;
 }
 
 /* Placeholder blocks the author replaces */
 .todo {
-  border-left: 3px solid var(--gold);
-  background: var(--ink-raised);
-  border-radius: 0 var(--radius) var(--radius) 0;
-  padding: 0.95rem 1.15rem;
-  color: var(--text-muted);
-  font-family: var(--sans);
-  font-size: 0.95rem;
-  line-height: 1.55;
-  margin: 1rem 0 1.5rem;
-  max-width: var(--measure);
+  background: #fdf6f2;
+  border-left: 4px solid #e89980;
+  border-radius: 0 6px 6px 0;
+  padding: 1em 1.25em;
+  margin: 0 0 2em 0;
+  color: #8a7f79;
+  font-size: 0.95em;
+  line-height: 1.6em;
+  text-align: left;
 }
 
-/* Footer */
-.site-footer {
-  border-top: 1px solid var(--rule);
-  margin-top: 2rem;
+.box .todo:last-child {
+  margin-bottom: 0;
 }
 
-.site-footer .wrap {
-  padding-top: 2rem;
-  padding-bottom: 2.5rem;
-  font-family: var(--sans);
-  font-size: 0.9rem;
-  color: var(--text-muted);
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 1rem 1.5rem;
-  flex-wrap: wrap;
+/* Small helpers */
+.center {
+  text-align: center;
 }
 
-.footer-brand {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5rem;
-  color: var(--text);
+.text-left {
+  text-align: left;
 }
 
-.footer-brand .hub {
-  width: 9px;
-  height: 9px;
+.box h4 {
+  font-weight: 600;
+  margin-top: 1.5em;
 }
 
-.site-footer a {
-  color: var(--text-muted);
+ul.plain {
+  text-align: left;
+  margin: 0 0 2em 1.25em;
+  padding: 0;
 }
 
-.site-footer a:hover {
-  color: var(--gold-bright);
+ul.plain li {
+  padding-left: 0.25em;
+  margin-bottom: 0.35em;
 }
 
-.footer-nav {
-  display: flex;
-  gap: 1rem;
-  flex-wrap: wrap;
+ul.plain li::marker {
+  color: #e89980;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a, .cta, .button {
-    transition: color 120ms ease, background-color 120ms ease;
+.meta {
+  color: #999;
+  font-size: 0.9em;
+}
+
+#footer .copyright a {
+  border-bottom: dotted 1px;
+}
+
+#footer .copyright a:hover {
+  border-bottom-color: transparent;
+}
+
+/* A heading above the steps grid on the services page */
+.box.features > header.major {
+  margin-bottom: 2em;
+}
+
+.box.features > header.major + .features-row {
+  border-top: solid 2px #e5e5e5;
+}
+
+.box.features > header.major + .features-row section {
+  padding-top: 3em;
+}
+
+@media screen and (max-width: 736px) {
+  .box.features > header.major + .features-row section {
+    padding-top: 2em !important;
   }
 }

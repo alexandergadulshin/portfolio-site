@@ -6,9 +6,6 @@ const routes = [
   "/work/syrex",
   "/work/client-websites",
   "/services",
-  "/writing",
-  "/writing/myanimelist-analysis",
-  "/writing/platform-comparison",
   "/about",
   "/contact",
 ];

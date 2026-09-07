@@ -4,114 +4,145 @@ import { site } from "../lib/site";
 export default function Home() {
   return (
     <>
-      <h1>Websites and AI tools for small businesses.</h1>
-      <p className="lede">
-        I&rsquo;m {site.name}, a designer and builder working with
-        owner-operators. At Syrex Consulting I built a UGC video generator that
-        produced <strong className="figure">{site.gmv}</strong> in GMV for
-        client businesses. Your business gets the same standard of work.
-      </p>
-      <div className="cta-row">
-        <Link href="/contact" className="cta">
-          Book a call
-        </Link>
-        <Link href="/work/syrex">Read the Syrex case study</Link>
-      </div>
+      <section id="banner" className="landing-banner">
+        <h2>Websites and AI tools for small businesses.</h2>
+        <p>
+          I&rsquo;m {site.name}, a designer and builder working with
+          owner-operators.{" "}
+          <br />
+          At Syrex Consulting I built a UGC video generator that produced{" "}
+          {site.gmv} in GMV for client businesses.
+        </p>
+        <ul className="actions special">
+          <li>
+            <Link href="/contact" className="button primary">
+              Book a call
+            </Link>
+          </li>
+          <li>
+            <Link href="/work/syrex" className="button">
+              Read the Syrex case study
+            </Link>
+          </li>
+        </ul>
+      </section>
 
-      <section className="section">
-        <h2>What I do</h2>
-        <div className="cards">
-          <div className="card">
-            <h3>Website design and builds</h3>
+      <section id="main" className="container landing-main">
+        <section className="box special">
+          <header className="major">
+            <h2>
+              {site.gmv} in GMV for client businesses,{" "}
+              <br />
+              from one tool I built at Syrex Consulting
+            </h2>
             <p>
-              A fast site with one clear action per page. I design and build
-              it in Next.js, then hand you the keys with documentation you can
-              follow without me.
+              Your business gets the same standard of work.{" "}
+              <br />
+              Here is what I do and how it helps.
             </p>
+          </header>
+        </section>
+
+        <section className="box special features">
+          <div className="features-row">
+            <section>
+              <span className="icon solid major fa-laptop accent2"></span>
+              <h3>Website design and builds</h3>
+              <p>
+                A fast site with one clear action per page. I design and build
+                it in Next.js, then hand you the keys with documentation you
+                can follow without me.
+              </p>
+            </section>
+            <section>
+              <span className="icon solid major fa-magic accent3"></span>
+              <h3>AI tool installation</h3>
+              <p>
+                I find the tools that fit your workflow and set them up. Then I
+                train you until you run them on your own.
+              </p>
+            </section>
           </div>
-          <div className="card">
-            <h3>AI tool installation</h3>
-            <p>
-              I find the tools that fit your workflow and set them up. Then I
-              train you until you run them on your own.
-            </p>
+          <div className="features-row">
+            <section>
+              <span className="icon solid major fa-pencil-alt accent4"></span>
+              <h3>Copy in your voice</h3>
+              <p>
+                Copy written for your customers, in your voice. Each page says
+                one thing and asks for one action.
+              </p>
+            </section>
+            <section>
+              <span className="icon solid major fa-key accent5"></span>
+              <h3>Handoff and training</h3>
+              <p>
+                You get the keys and a training session, so you can run the
+                site and the tools yourself.
+              </p>
+            </section>
+          </div>
+        </section>
+
+        <div className="row">
+          <div className="col-6 col-12-narrower">
+            <section className="box special">
+              <div className="image featured cover cover-coral">
+                <span className="cover-figure">{site.gmv}</span>
+                <span className="cover-label">
+                  in GMV generated for client businesses
+                </span>
+              </div>
+              <h3>UGC video generator for Syrex Consulting</h3>
+              <p>
+                The case study shows the problem and how the build solved it.
+              </p>
+              <ul className="actions special">
+                <li>
+                  <Link href="/work/syrex" className="button alt">
+                    Read the case study
+                  </Link>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div className="col-6 col-12-narrower">
+            <section className="box special">
+              <div className="image featured cover cover-mint">
+                <span className="cover-figure">In progress</span>
+                <span className="cover-label">client website builds</span>
+              </div>
+              <h3>Client website builds</h3>
+              <p>
+                Before-and-after screenshots and load times are on the way once
+                client permissions clear.
+              </p>
+              <ul className="actions special">
+                <li>
+                  <Link href="/work/client-websites" className="button alt">
+                    See the status
+                  </Link>
+                </li>
+              </ul>
+            </section>
           </div>
         </div>
-        <p>
-          <Link href="/services">See both services in detail</Link>
-        </p>
       </section>
 
-      <section className="section">
-        <h2>Proof</h2>
-        <ul className="proof-list">
-          <li>
-            <h3>
-              <Link href="/work/syrex">
-                UGC video generator for Syrex Consulting
-              </Link>
-            </h3>
-            <p>
-              <span className="figure">{site.gmv}</span> in GMV generated for
-              client businesses. The case study shows the problem and how the
-              build solved it.
-            </p>
-          </li>
-          <li className="pending">
-            <h3>
-              <Link href="/work/client-websites">Client website builds</Link>
-            </h3>
-            <p>
-              Case study in progress. I am collecting screenshots and client
-              permissions now, and the full write-up goes live soon.
-            </p>
-          </li>
-        </ul>
-      </section>
-
-      <section className="section">
-        <h2>Writing</h2>
-        <p>
-          Copy carries the sale on a small business site. These papers show the
-          analysis behind the voice I use here.
-        </p>
-        <ul className="proof-list">
-          <li>
-            <h3>
-              <Link href="/writing/myanimelist-analysis">
-                A rhetorical analysis of MyAnimeList
-              </Link>
-            </h3>
-            <p>
-              How a fan database persuades new visitors to stay, read through
-              Foss&rsquo;s framework for rhetorical criticism.
-            </p>
-          </li>
-          <li>
-            <h3>
-              <Link href="/writing/platform-comparison">
-                Chess.com and MyAnimeList, compared
-              </Link>
-            </h3>
-            <p>
-              Two communities take different approaches to their interfaces.
-              Each one teaches something about writing for an audience.
-            </p>
-          </li>
-        </ul>
-      </section>
-
-      <section className="panel">
+      <section id="cta">
         <h2>Start with a call</h2>
         <p>
           Tell me about your business and I will tell you what I would build
-          first. The call costs nothing and comes with no obligation.
+          first.{" "}
+          <br />
+          The call costs nothing and comes with no obligation.
         </p>
-        <div className="cta-row">
-          <Link href="/contact" className="cta">
-            Book a call
-          </Link>
-        </div>
+        <ul className="actions special">
+          <li>
+            <Link href="/contact" className="button">
+              Book a call
+            </Link>
+          </li>
+        </ul>
       </section>
     </>
   );

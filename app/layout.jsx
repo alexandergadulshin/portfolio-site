@@ -1,7 +1,10 @@
+import "./vendor/alpha.css";
+import "./vendor/fontawesome.css";
 import "./globals.css";
 import Link from "next/link";
 import { site } from "../lib/site";
-import SiteNav from "../components/SiteNav";
+import SiteHeader from "../components/SiteHeader";
+import MobileNav from "../components/MobileNav";
 
 const title = `${site.name}: web design and AI tools for small businesses`;
 const description =
@@ -24,26 +27,43 @@ export const metadata = {
 };
 
 export const viewport = {
-  themeColor: "#191613",
+  themeColor: "#444444",
 };
 
 function Footer() {
+  const year = new Date().getFullYear();
   return (
-    <footer className="site-footer">
-      <div className="wrap">
-        <span className="footer-brand">
-          <span className="hub" aria-hidden="true"></span>
-          {site.name}
-        </span>
-        <nav className="footer-nav" aria-label="Footer">
+    <footer id="footer">
+      <ul className="icons">
+        <li>
+          <a href={`mailto:${site.email}`} className="icon solid fa-envelope">
+            <span className="label">Email</span>
+          </a>
+        </li>
+      </ul>
+      <ul className="copyright">
+        <li>
+          &copy; {year} {site.name}
+        </li>
+        <li>
           <Link href="/work">Work</Link>
+        </li>
+        <li>
           <Link href="/services">Services</Link>
-          <Link href="/writing">Writing</Link>
+        </li>
+        <li>
           <Link href="/about">About</Link>
+        </li>
+        <li>
           <Link href="/contact">Contact</Link>
-        </nav>
-        <a href={`mailto:${site.email}`}>{site.email}</a>
-      </div>
+        </li>
+        <li>
+          <a href={`mailto:${site.email}`}>{site.email}</a>
+        </li>
+        <li>
+          Design: <a href="https://html5up.net">HTML5 UP</a>
+        </li>
+      </ul>
     </footer>
   );
 }
@@ -59,7 +79,7 @@ export default function RootLayout({ children }) {
           crossOrigin="anonymous"
         />
         <link
-          href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400..700;1,8..60,400..700&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,300;0,400;0,600;1,300;1,400&display=swap"
           rel="stylesheet"
         />
       </head>
@@ -67,11 +87,12 @@ export default function RootLayout({ children }) {
         <a href="#main" className="skip-link">
           Skip to content
         </a>
-        <SiteNav />
-        <main id="main" className="wrap">
+        <div id="page-wrapper">
+          <SiteHeader />
           {children}
-        </main>
-        <Footer />
+          <Footer />
+        </div>
+        <MobileNav />
       </body>
     </html>
   );

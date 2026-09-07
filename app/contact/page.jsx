@@ -4,31 +4,40 @@ export const metadata = { title: "Book a call" };
 
 export default function Contact() {
   return (
-    <>
-      <h1>Book a call</h1>
-      <p className="lede">
-        Tell me about your business and what slows it down. I read each
-        message and reply within one business day.
-      </p>
-      <p>
-        Email me at <a href={`mailto:${site.email}`}>{site.email}</a> with a
-        sentence or two about your business. You do not need a long pitch.
-      </p>
-      {site.bookingUrl ? (
-        <div className="cta-row">
-          <a href={site.bookingUrl} className="cta">
-            Book a call
-          </a>
-        </div>
-      ) : (
-        <div className="todo">
-          [Add your Calendly or booking link in lib/site.js and a green
-          booking button appears here.]
-        </div>
-      )}
-      <p className="muted">
-        Based in {site.location}. Working with clients anywhere.
-      </p>
-    </>
+    <section id="main" className="container medium">
+      <header>
+        <h2>Book a call</h2>
+        <p>
+          Tell me about your business and what slows it down. I read each
+          message and reply within one business day.
+        </p>
+      </header>
+
+      <div className="box special">
+        <span className="icon solid major fa-envelope accent2"></span>
+        <h3>Email me</h3>
+        <p>
+          Write to <a href={`mailto:${site.email}`}>{site.email}</a> with a
+          sentence or two about your business. You do not need a long pitch.
+        </p>
+        {site.bookingUrl ? (
+          <ul className="actions special">
+            <li>
+              <a href={site.bookingUrl} className="button primary">
+                Book a call
+              </a>
+            </li>
+          </ul>
+        ) : (
+          <div className="todo">
+            [Add your Calendly or booking link in lib/site.js and a booking
+            button appears here.]
+          </div>
+        )}
+        <p className="meta">
+          Based in {site.location}. Working with clients anywhere.
+        </p>
+      </div>
+    </section>
   );
 }
