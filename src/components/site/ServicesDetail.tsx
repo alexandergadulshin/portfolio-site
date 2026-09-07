@@ -1,0 +1,53 @@
+const details = [
+    {
+        id: "web",
+        title: "Website design and builds",
+        intro: "Most small business sites try to say too much. I build sites that load fast and point each page at one action, whether that action is a booking or a sale.",
+        items: [
+            "Design and build in Next.js, hosted on Vercel",
+            "Copy written for your customers, in your voice",
+            "Documentation you can follow without me",
+            "A handoff session where you learn to update it yourself",
+        ],
+    },
+    {
+        id: "ai",
+        title: "AI tool installation",
+        intro: "AI tools save owners time on quotes, follow-ups, content, and bookkeeping. Choosing them and wiring them in takes time most owners do not have. I choose the tools and set them up. Then I train you to run them.",
+        items: [
+            "An audit of how your work flows today",
+            "Setup of the tools that fit, nothing extra",
+            "Training until you run them without me",
+            "A written playbook your team can share",
+        ],
+    },
+];
+
+const ServicesDetail = () => (
+    <div className="tp-pd-2-overview-ptb pt-120 pb-60">
+        <div className="container">
+            {details.map((d) => (
+                <div className="tp-about-border pt-50 mb-40" key={d.id} id={`${d.id}-detail`}>
+                    <div className="row">
+                        <div className="col-lg-5">
+                            <div className="tp-pd-2-overview-heading tp_fade_anim" data-delay=".3">
+                                <h3 className="tp-pd-2-overview-title reveal-text">{d.title}</h3>
+                            </div>
+                        </div>
+                        <div className="col-xl-6 col-lg-7">
+                            <div className="tp-pd-2-overview-wrap">
+                                <p>{d.intro}</p>
+                                <h4 className="tp-pd-2-step-item-title mt-20 mb-15">What you get</h4>
+                                <ul className="site-list">
+                                    {d.items.map((item) => <li key={item}>{item}</li>)}
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            ))}
+        </div>
+    </div>
+);
+
+export default ServicesDetail;

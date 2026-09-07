@@ -1,0 +1,181 @@
+@forward '../../public/assets/css/bootstrap.min.css';
+@forward '../../public/assets/css/spacing.css';
+@forward '../../public/assets/css/font-awesome-pro.css';
+@forward '../../public/assets/scss/main.scss';
+@forward "react-toastify/dist/ReactToastify.css";
+@import 'react-photo-view/dist/react-photo-view.css';
+
+:root {
+    /* Default = Light Theme */
+    --color-bg-section: #09090b;
+    --color-bg-hero: #f6f6f6;
+}
+
+.cunnet-dark {
+    /* Dark Override */
+    --color-bg-section: #1e1e1e;
+    --color-bg-hero: #0E0F11;
+}
+
+/* common section background */
+.tp-section-bg {
+    background-color: var(--color-bg-section);
+}
+/* reusable class for hero background */
+.tp-hero-bg {
+    background-color: var(--color-bg-hero);
+}
+
+/* Keeps logos proportional by fixing height while preserving natural width */
+.brand-logo-img {
+    height: 32px;
+    width: auto;
+    object-fit: contain;
+}
+.port-img img {
+    height: 100%;
+    width: auto;
+    object-fit: contain;
+}
+.z-index-high {
+    z-index: 99 !important;
+}
+
+.form-error{
+    font-size: 12px;
+    color: red;
+}
+//product reviews rating style
+.tp-product-details-review-form-rating-icon i {
+    font-size: 16px;
+    color: #d1d1d1;
+    transition: color 0.2s ease;
+}
+
+.tp-product-details-review-form-rating-icon i.active {
+    color: #ffb400;
+}
+
+/* Video modal style */
+.video-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.video-modal-container {
+    width: 90%;
+    max-width: 1200px;
+    position: relative;
+}
+
+.video-modal-iframe {
+    width: 100%;
+    height: 70vh;
+    min-height: 500px;
+    border: none;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.video-modal-close {
+    position: absolute;
+    top: -50px;
+    right: 0;
+    color: white;
+    font-size: 30px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.video-modal-close:hover {
+    transform: scale(1.2);
+}
+
+.tp-slider-transtion{
+    & .swiper-wrapper{
+        -webkit-transition-timing-function: linear;
+        transition-timing-function: linear;
+    }
+    & .swiper-slide{
+        width: auto;
+    }
+}
+/* ------------------------------------------------------------
+   Site additions on top of the Cunnet template styles.
+------------------------------------------------------------ */
+
+/* Text brand mark in place of the template's logo images */
+.site-brand {
+    font-size: 22px;
+    letter-spacing: -0.02em;
+    color: var(--tp-common-black, #09090b);
+    text-decoration: none;
+    white-space: nowrap;
+}
+.site-brand:hover { color: var(--tp-common-black, #09090b); }
+.site-brand-footer { font-size: 28px; }
+.tp-offcanvas-2-left .site-brand { color: #fff; }
+
+/* Header call to action sits beside the menu button */
+.site-header-btn { margin-right: 16px; }
+
+/* Placeholder blocks the author replaces */
+.site-todo {
+    border-left: 3px solid #ff292b;
+    background: #f4f4f4;
+    border-radius: 0 8px 8px 0;
+    padding: 18px 22px;
+    margin: 0 0 24px 0;
+    color: #4a4a4a;
+    font-size: 15px;
+    line-height: 1.6;
+}
+.tp-section-bg .site-todo { background: rgba(255, 255, 255, 0.08); color: #d6d6d6; }
+
+/* A figure inside running text */
+.site-figure { color: #ff292b; white-space: nowrap; }
+
+/* Simple bullet lists on the services page */
+.site-list { margin: 0 0 30px 0; padding-left: 20px; }
+.site-list li { margin-bottom: 8px; font-size: 17px; line-height: 1.5; }
+.site-list li::marker { color: #ff292b; }
+
+/* Case study meta rows fall back to a plain grid */
+.site-meta { display: grid; gap: 6px 24px; grid-template-columns: max-content 1fr; font-size: 16px; }
+.site-meta dt { color: #7a7a7a; }
+.site-meta dd { margin: 0; }
+
+/* Sentence case everywhere: undo the template's capitalize and uppercase
+   on buttons, labels, tags, and page titles. The giant wordmark keeps
+   the template's uppercase treatment. */
+.tp-btn, .tp-btn-border, .tp-btn-grey, .tp-btn-red,
+.mp-about-logo, .mp-portfolio-tag, .mp-portfolio-title,
+.tp-error-title-sm, .tp-breadcrumb-title, .tp-breadcrumb-subtitle,
+.tp-footer-bigtext, .tp-service-title, .tp-pd-3-title, .hamburger-close-btn {
+    text-transform: none !important;
+}
+
+/* Case study title: dramatic, but not five lines tall */
+.site-case-title { font-size: clamp(38px, 5.6vw, 84px) !important; line-height: 1.02 !important; }
+
+/* Two-column section headings stay inside their column */
+.tp-pd-2-overview-title { font-size: clamp(28px, 3.4vw, 46px) !important; line-height: 1.1 !important; }
+
+/* Hero tiles sit two across on phones instead of stacking full width */
+@media (max-width: 767px) {
+    .mp-hero-magnetic-image-wrap { gap: 12px !important; }
+    .mp-hero-magnetic-item { flex: 0 0 calc(50% - 6px); max-width: calc(50% - 6px); }
+    .mp-hero-magnetic-item img { width: 100%; height: auto; }
+}
+
+/* Work card titles: plain links, no layered hover text */
+.site-work-title a { color: inherit; text-decoration: none; }
