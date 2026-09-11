@@ -203,3 +203,67 @@
 }
 .tp-footer-area .tp-footer-email a { display: inline; max-width: 100%; }
 .site-footer-email-widget { min-width: 0; }
+
+/* Footer tightening (brief 4): compressed rhythm, one-row pills from
+   1280px, viewport-scaled call to action, a single underline on the
+   email, and a bottom bar that reserves room for the scroll-to-top button. */
+.site-footer {
+    padding-top: 64px !important;
+    padding-bottom: 0 !important;
+}
+.site-footer-top { row-gap: 28px; align-items: flex-start; }
+.site-footer .tp-footer-widget { margin-bottom: 0; }
+.site-footer-pills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: flex-start;
+    margin-left: 0 !important;
+}
+.site-footer-pills a { white-space: nowrap; }
+@media (min-width: 1280px) {
+    .site-footer-pills { flex-wrap: nowrap; }
+}
+@media (max-width: 1279.98px) {
+    .site-footer-pills { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); max-width: 400px; }
+    .site-footer-pills a { text-align: center; }
+}
+.site-footer-email-widget { min-width: 0; }
+.site-footer .tp-footer-dec { display: block; margin-bottom: 6px; }
+.tp-footer-area .tp-footer-email {
+    text-decoration: none;
+    margin: 0;
+}
+.tp-footer-area .tp-footer-email a {
+    display: inline;
+    background: none;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 0.2em;
+    text-decoration-skip-ink: none;
+}
+.tp-footer-area .tp-footer-email a::before,
+.tp-footer-area .tp-footer-email a::after { content: none; display: none; }
+
+.site-footer-cta { margin: 40px 0 24px; text-align: right; }
+.tp-footer-area .tp-footer-bigtext {
+    font-size: clamp(56px, 8.4vw, 128px) !important;
+    line-height: 0.92 !important;
+    margin: 0 !important;
+    white-space: nowrap;
+}
+.tp-footer-area .tp-footer-bigtext a { display: inline-block; max-width: 100%; }
+
+.site-footer-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 12px 32px;
+    padding: 22px 120px 28px 0;
+}
+.site-footer-bar .site-brand-footer { font-size: 22px; }
+.site-footer-bar .tp-footer-copyright { line-height: 1.4; }
+@media (max-width: 1023.98px) {
+    .site-footer-bar { padding-right: 0; padding-bottom: 96px; }
+}
