@@ -6,7 +6,10 @@ import { ArrowBottomIconTwo } from "@/svg/ArrowIcons";
 import SiteCta from "@/components/site/SiteCta";
 import { Metadata } from "next";
 
-export const metadata: Metadata = { title: "Services" };
+export const metadata: Metadata = {
+    title: "Services",
+    description: "Website design and builds, and AI tool installation, on a fixed price and a fixed date.",
+};
 
 export default function Services() {
     return (

@@ -44,8 +44,9 @@ site. Keep both decisions.
   URL, the Syrex GMV figure, location, and the public URL. Bracketed
   values render on the live site until replaced.
 - `<Todo>` blocks (grey boxes with a red left border, component in
-  `src/components/site/Todo.tsx`) sit in the Syrex case study, the about
-  page, and the contact page. The user will paste real content there.
+  `src/components/site/Todo.tsx`) remain only on the two Writing paper
+  pages, where the full MLA papers go. The papers were never in the repo;
+  the user supplies them. Do not reconstruct them.
 - Never invent values for these. No fabricated metrics, client names, or
   biography. Ask the user or leave the placeholder.
 
@@ -91,7 +92,9 @@ site copy:
   real-time capture (DevTools protocol with a wait) or in a browser.
 - Header: text brand mark from `site.name`, a "Book a call" button, and a
   menu button that opens the off-canvas panel. Nav links live in
-  `src/data/MenuRenderer/menu-light.ts`.
+  `src/data/MenuRenderer/menu-light.ts`: Work, Services, About, Writing,
+  Book a call. `SmartLink` leaves `mailto:` and other scheme links alone;
+  use it or a plain `<a>` for email links, never a bare relative string.
 
 ## Structure
 
@@ -100,7 +103,11 @@ site copy:
   closing call to action
 - `/work` index, `/work/syrex` (the lead case study, proof-first),
   `/work/client-websites` (honest in-progress stub)
-- `/services`, `/about`, `/contact`
+- `/services`, `/about` (500+ words, copy fixed by the user's brief of
+  2026-09-11, do not rewrite), `/contact`
+- `/writing` index plus `/writing/myanimelist-analysis` and
+  `/writing/platform-comparison`, restored on 2026-09-11 with their
+  original intro copy; `src/components/site/PaperPage.tsx` is the layout
 - `src/app/not-found.tsx` gives direction in site voice, no apology
 - Case-study cards and steps are data: `src/data/work-data.ts`,
   `src/data/process-data.ts`

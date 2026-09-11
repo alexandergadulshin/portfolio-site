@@ -59,7 +59,7 @@ const ServicesList = () => {
                                 {services.map((service, index) => (
                                     <div key={service.id} className={`tp-service-item service-item mb-5 ${activeIndex === index ? "active" : ""}`} onMouseEnter={() => handleHover(index)}>
                                         <h2 className="tp-service-title tp-ff-sequel-roman d-inline-block">
-                                            <a href={`#${service.id}`}>
+                                            <a href={`#${service.id}-detail`}>
                                                 {service.title}
                                                 <span className="tp-service-icon d-inline-block"><ServiceArrowIcon /></span>
                                             </a>

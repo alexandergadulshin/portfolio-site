@@ -8,7 +8,10 @@ import { workItems } from "@/data/work-data";
 import { site } from "@/config/site";
 import { Metadata } from "next";
 
-export const metadata: Metadata = { title: "Syrex case study" };
+export const metadata: Metadata = {
+    title: "Syrex case study",
+    description: "A UGC video generator that produced $284,000 in GMV for client businesses.",
+};
 
 export default function SyrexCaseStudy() {
     const related = workItems.filter((item) => item.href !== "/work/syrex");

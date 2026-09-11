@@ -2,7 +2,10 @@ import CtaButton from "@/components/site/CtaButton";
 import { site } from "@/config/site";
 import { Metadata } from "next";
 
-export const metadata: Metadata = { title: "Book a call" };
+export const metadata: Metadata = {
+    title: "Book a call",
+    description: "Book a free call and tell me about your business.",
+};
 
 export default function Contact() {
     return (
@@ -16,7 +19,7 @@ export default function Contact() {
                                     Book a call.
                                 </h1>
                                 <div className="tp-pd-2-categories tp_fade_anim" data-delay=".5">
-                                    <span>Based in {site.location}</span> <span>Working with clients anywhere</span>
+                                    <span>Based in {site.location}.</span> <span>Working with clients anywhere.</span>
                                 </div>
                             </div>
                         </div>

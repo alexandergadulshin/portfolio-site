@@ -4,7 +4,10 @@ import SiteCta from "@/components/site/SiteCta";
 import { workItems } from "@/data/work-data";
 import { Metadata } from "next";
 
-export const metadata: Metadata = { title: "Work" };
+export const metadata: Metadata = {
+    title: "Work",
+    description: "Case studies that open with the result.",
+};
 
 export default function Work() {
     return (

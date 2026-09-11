@@ -14,6 +14,7 @@ const FooterMainContent = () => {
                             <Link href="/work">Work</Link>
                             <Link href="/services">Services</Link>
                             <Link href="/about">About</Link>
+                            <Link href="/writing">Writing</Link>
                             <Link href="/contact">Contact</Link>
                         </div>
                     </div>
