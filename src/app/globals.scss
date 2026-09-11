@@ -190,3 +190,16 @@
 .site-paper blockquote { margin: 24px 0; padding: 4px 0 4px 20px; border-left: 3px solid #ff292b; color: #4a4a4a; }
 .site-works-cited { list-style: none; padding: 0; margin: 16px 0 0; }
 .site-works-cited li { padding-left: 2em; text-indent: -2em; margin-bottom: 12px; }
+
+/* Footer email: scale with the viewport and wrap inside its column at
+   any width, so the address is never clipped (seen at 1440px). The
+   footer carries no scroll-triggered fade, so it never starts hidden. */
+.tp-footer-area .tp-footer-email {
+    font-size: clamp(26px, 2.4vw, 42px) !important;
+    line-height: 1.15;
+    overflow-wrap: anywhere;
+    word-break: break-word;
+    max-width: 100%;
+}
+.tp-footer-area .tp-footer-email a { display: inline; max-width: 100%; }
+.site-footer-email-widget { min-width: 0; }

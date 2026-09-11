@@ -43,10 +43,8 @@ site. Keep both decisions.
 - `src/config/site.ts` is the single config file: name, email, booking
   URL, the Syrex GMV figure, location, and the public URL. Bracketed
   values render on the live site until replaced.
-- `<Todo>` blocks (grey boxes with a red left border, component in
-  `src/components/site/Todo.tsx`) remain only on the two Writing paper
-  pages, where the full MLA papers go. The papers were never in the repo;
-  the user supplies them. Do not reconstruct them.
+- No `<Todo>` placeholders remain on the live site. The component in
+  `src/components/site/Todo.tsx` stays for future drafts.
 - Never invent values for these. No fabricated metrics, client names, or
   biography. Ask the user or leave the placeholder.
 
@@ -105,9 +103,10 @@ site copy:
   `/work/client-websites` (honest in-progress stub)
 - `/services`, `/about` (500+ words, copy fixed by the user's brief of
   2026-09-11, do not rewrite), `/contact`
-- `/writing` index plus `/writing/myanimelist-analysis` and
-  `/writing/platform-comparison`, restored on 2026-09-11 with their
-  original intro copy; `src/components/site/PaperPage.tsx` is the layout
+- `/writing` index with one entry, `/writing/myanimelist-analysis`, which
+  carries the full paper; `src/components/site/PaperPage.tsx` is the
+  layout. The Chess.com comparison paper was cut for good on 2026-09-11.
+  Do not recreate it.
 - `src/app/not-found.tsx` gives direction in site voice, no apology
 - Case-study cards and steps are data: `src/data/work-data.ts`,
   `src/data/process-data.ts`

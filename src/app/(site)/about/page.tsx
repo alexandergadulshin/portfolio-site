@@ -60,7 +60,7 @@ export default function About() {
             </CaseSection>
 
             <CaseSection title="Where to go next">
-                <p>If you want evidence first, read the <Link href="/work/syrex">Syrex case study</Link>. If you want the offer, the <Link href="/services">Services page</Link> lists both service lines and the four steps of a project. Every project runs on a one-page scope with a fixed price and a fixed date. If you want to see how I reason on paper, the <Link href="/writing">Writing page</Link> holds two course analyses of sites you may know.</p>
+                <p>If you want evidence first, read the <Link href="/work/syrex">Syrex case study</Link>. If you want the offer, the <Link href="/services">Services page</Link> lists both service lines and the four steps of a project. Every project runs on a one-page scope with a fixed price and a fixed date. If you want to see how I reason on paper, the <Link href="/writing">Writing page</Link> holds a course analysis of a site you may know.</p>
                 <p>When you are ready, <Link href="/contact">book a call</Link>. Tell me about your business and what slows it down. I will tell you what I would build first. The call costs nothing and comes with no obligation.</p>
             </CaseSection>
 
