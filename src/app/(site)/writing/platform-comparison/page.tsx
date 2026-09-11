@@ -1,9 +1,17 @@
 import PaperPage from "@/components/site/PaperPage";
+import { notFound } from "next/navigation";
 import { Metadata } from "next";
 
 export const metadata: Metadata = { title: "Chess.com and MyAnimeList, compared" };
 
+// The paper text has not shipped yet. Until it does, this route returns
+// 404 so no placeholder is reachable. Remove the notFound() call, restore
+// the entry in src/app/(site)/writing/page.tsx and src/app/sitemap.ts,
+// and pass the paper as children when the text arrives.
+const PAPER_READY = false;
+
 export default function PlatformComparison() {
+    if (!PAPER_READY) notFound();
     return (
         <PaperPage
             title="Chess.com and MyAnimeList, compared"
