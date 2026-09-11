@@ -88,6 +88,12 @@ site copy:
   `tp-char-animation`, and `reveal-text` start hidden and animate in,
   so a headless screenshot taken at load will look empty. Verify with a
   real-time capture (DevTools protocol with a wait) or in a browser.
+- The home wordmark renders `site.name` as two lines, first name and last
+  name, sized from the viewport (`.site-wordmark` in `globals.scss`) so it
+  never clips or breaks mid-word. It is not split into per-letter spans;
+  that would lose the font's kerning.
+- The closing call to action sits in `.site-cta-seat`, whose lower half is
+  the footer color so the card's rounded bottom corners read as overlap.
 - Header: text brand mark from `site.name`, a "Book a call" button, and a
   menu button that opens the off-canvas panel. Nav links live in
   `src/data/MenuRenderer/menu-light.ts`: Work, Services, About, Writing,

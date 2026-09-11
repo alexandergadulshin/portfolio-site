@@ -267,3 +267,29 @@
 @media (max-width: 1023.98px) {
     .site-footer-bar { padding-right: 0; padding-bottom: 96px; }
 }
+
+/* Name display (brief 6). The wordmark scales with the viewport, never
+   wraps or clips, and keeps the font's kerning because it is no longer
+   split into per-letter spans. Tracking is set for the sizes it renders at. */
+.site-wordmark {
+    font-size: clamp(40px, 15vw, 240px) !important;
+    line-height: 0.95 !important;
+    letter-spacing: -0.025em !important;
+    overflow: visible;
+    max-width: 100%;
+}
+.site-wordmark-line {
+    display: block;
+    white-space: nowrap;
+}
+.site-brand, .site-brand-footer {
+    letter-spacing: -0.01em;
+    white-space: nowrap;
+    font-kerning: normal;
+}
+
+/* CTA card seats on the footer (brief 6): the surface behind the card's
+   bottom corners is the footer color, so the curve reads as overlap. */
+.site-cta-seat {
+    background: linear-gradient(to bottom, transparent 0, transparent 50%, var(--color-bg-section, #09090b) 50%, var(--color-bg-section, #09090b) 100%);
+}

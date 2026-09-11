@@ -9,6 +9,11 @@ const tiles = [
     { src: "/assets/img/site/tile-call.jpg", alt: "Book a call" },
 ];
 
+// The wordmark breaks in exactly one place, between the first and last
+// name, and each line is sized from the longer name so it never clips.
+const [firstName, ...rest] = site.name.split(" ");
+const lastName = rest.join(" ");
+
 const HomeHero = () => {
     return (
         <div className="mp-hero-area mp-hero-spacing">
@@ -52,8 +57,11 @@ const HomeHero = () => {
 
                 <div className="row">
                     <div className="col-lg-12">
-                        <div className="mp-hero-bigtitle-wrap jump-anim text-center pt-10 tp_fade_anim" data-delay=".8" data-fade-from="bottom" data-ease="bounce">
-                            <h2 className="mp-hero-bigtitle tp-ff-sequel-semi-bold">{site.name}</h2>
+                        <div className="mp-hero-bigtitle-wrap text-center pt-10 tp_fade_anim" data-delay=".8" data-fade-from="bottom" data-ease="bounce">
+                            <h2 className="mp-hero-bigtitle site-wordmark tp-ff-sequel-semi-bold" aria-label={site.name}>
+                                <span className="site-wordmark-line">{firstName}</span>
+                                <span className="site-wordmark-line">{lastName}</span>
+                            </h2>
                         </div>
                     </div>
                 </div>

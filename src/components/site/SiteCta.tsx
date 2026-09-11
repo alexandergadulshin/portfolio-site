@@ -4,6 +4,7 @@ import Image from "next/image";
 // Closing invitation, from the template's Digital Studio call to action.
 const SiteCta = () => {
     return (
+        <div className="site-cta-seat">
         <div className="ca-testimonial-spacing fix tp-section-bg">
             <div className="ca-cta-area ca-cta-spacing pt-180 pb-120 p-relative z-index-1">
                 <div className="mil-scale-img ca-cta-scale" data-value-1="1.45" data-value-2="1">
@@ -29,6 +30,7 @@ const SiteCta = () => {
                     </div>
                 </div>
             </div>
+        </div>
         </div>
     );
 };
