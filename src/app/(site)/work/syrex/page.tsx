@@ -2,9 +2,8 @@ import CaseSection from "@/components/site/CaseSection";
 import CaseBanner from "@/components/site/CaseBanner";
 import CaseIntro from "@/components/site/CaseIntro";
 import CtaButton from "@/components/site/CtaButton";
-import WorkCard from "@/components/site/WorkCard";
+import MoreWork from "@/components/site/MoreWork";
 import SiteCta from "@/components/site/SiteCta";
-import { workItems } from "@/data/work-data";
 import { site } from "@/config/site";
 import { Metadata } from "next";
 
@@ -14,7 +13,6 @@ export const metadata: Metadata = {
 };
 
 export default function SyrexCaseStudy() {
-    const related = workItems.filter((item) => item.href !== "/work/syrex");
     return (
         <main>
             <CaseIntro
@@ -52,22 +50,7 @@ export default function SyrexCaseStudy() {
                 </div>
             </CaseSection>
 
-            <div className="tp-portfolio-area pt-90 pb-60">
-                <div className="container">
-                    <div className="row">
-                        <div className="col-12">
-                            <div className="mb-25">
-                                <h2 className="tp-portfoliom-m-title reveal-text">More work</h2>
-                            </div>
-                        </div>
-                        {related.map((item) => (
-                            <div className="col-lg-6" key={item.href}>
-                                <WorkCard item={item} />
-                            </div>
-                        ))}
-                    </div>
-                </div>
-            </div>
+            <MoreWork current="/work/syrex" />
             <SiteCta />
         </main>
     );

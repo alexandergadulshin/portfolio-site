@@ -1,6 +1,6 @@
 import { ArrowIconFive } from "@/svg/ArrowIcons";
 import SmartLink from "@/components/common/SmartLink";
-import { workItems } from "@/data/work-data";
+import { homeWorkItems } from "@/data/work-data";
 import WorkCard from "./WorkCard";
 
 const HomeWork = () => {
@@ -16,7 +16,7 @@ const HomeWork = () => {
                     </div>
                 </div>
                 <div className="row pt-30">
-                    {workItems.map((item) => (
+                    {homeWorkItems.map((item) => (
                         <div className="col-lg-6" key={item.href}>
                             <WorkCard item={item} />
                         </div>

@@ -99,8 +99,13 @@ site copy:
 - `/` home: hero with tiles and the name wordmark, dark proof band with
   the GMV sentence, recent work cards, four project steps, two services,
   closing call to action
-- `/work` index, `/work/syrex` (the lead case study, proof-first),
-  `/work/client-websites` (honest in-progress stub)
+- `/work` index with four cards in this order: `/work/syrex` (the lead
+  case study), `/work/product-radar` and `/work/video-bot` (added
+  2026-09-11 from a brief with hard rules: no client names, no dollar
+  figures, no model or vendor names, no product screenshots on those two
+  pages), `/work/client-websites` (in-progress stub). The home page
+  features Syrex and the dashboard. `src/components/site/MoreWork.tsx`
+  renders the other case studies under each one.
 - `/services`, `/about` (500+ words, copy fixed by the user's brief of
   2026-09-11, do not rewrite), `/contact`
 - `/writing` index with one entry, `/writing/myanimelist-analysis`, which
