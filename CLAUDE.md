@@ -88,6 +88,14 @@ site copy:
   color, Sequel type, no people). The closing call to action uses the
   template's chrome 3D shapes from `public/assets/img/cta/`. Never add a
   photo of the user.
+- Two exceptions to the flat-tile rule, both real screenshots the user
+  captured and approved on 2026-09-11, blurred by request (client name,
+  dollar figures, emails, the service-account address):
+  `public/assets/img/site/dashboard/radar-daily.jpg` on
+  `/work/product-radar` and `suite-setup.jpg` on `/work/syrex`. They are
+  listed in `src/data/product-radar-shots.ts` and `src/data/syrex-shots.ts`
+  and rendered by `src/components/site/DashboardShots.tsx`. Add a
+  screenshot only when the user names the file and it is redacted.
 - Animations come from the template: `src/config/animationConfig.ts`
   maps routes to GSAP setups. Elements with `tp_fade_anim`,
   `tp-char-animation`, and `reveal-text` start hidden and animate in,
