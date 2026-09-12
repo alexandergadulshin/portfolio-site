@@ -1,7 +1,7 @@
 // The MyAnimeList paper, verbatim from the handoff brief of 2026-09-11.
 // Text lives in template literals so quotes and apostrophes render as written.
 
-export const malStandfirst = `The verdict: MyAnimeList keeps the best database in its field and speaks with no designed voice at all. The defaults serve veterans who already know the site and fail everyone else. The full analysis follows.`;
+export const malStandfirst = `The verdict: MyAnimeList keeps the best database in its field and speaks with no designed voice at all. The defaults serve veterans who already know the site and fail everyone else. As UX writing, I rate the experience 3 out of 10. The full analysis follows.`;
 
 const MalPaper = () => (
     <>
