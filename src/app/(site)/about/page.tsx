@@ -40,7 +40,7 @@ export default function About() {
 
             <CaseSection title="How I got here">
                 <p>I started building websites for friends&apos; side businesses in high school. Each build taught me the same lesson: the code mattered less than the words on the page, and a site succeeds when a stranger can land on it and act without help.</p>
-                <p>I kept building at UC Santa Barbara. In my second year, Syrex Consulting took me on through a referral, and I built a UGC video generator there. Over 6 months, 12 client businesses made video ads with it for TikTok Shop and Instagram. Those ads drove $284,000 in gross merchandise value. I have run it as a business since. The full story is on the <Link href="/work/syrex">Syrex case study</Link> page.</p>
+                <p>I kept building at UC Santa Barbara. In my second year, Syrex Consulting took me on through a referral, and I built a UGC video generator there. Over 6 months, 12 client businesses made video ads with it for TikTok Shop and Instagram. Those ads drove $284,000 in gross merchandise value. Since then I have done client work as a business. The full story is in the <Link href="/work/syrex">Syrex case study</Link>.</p>
                 <p>The writing coursework feeds the technical work. The hardest part of a small business site is deciding what each page says and what it asks you to do. I train for that part in the classroom and practice the build side on real projects.</p>
             </CaseSection>
 

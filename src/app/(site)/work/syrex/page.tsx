@@ -31,7 +31,7 @@ export default function SyrexCaseStudy() {
 
             <CaseSection title="The result">
                 <p>The generator produced <span className="site-figure">{site.gmv}</span> in gross merchandise value for client businesses.</p>
-                <p>Over 6 months, 12 client businesses used the generator to make ads for TikTok Shop and Instagram. GMV counts the sales those ads drove, measured in each platform&apos;s own reporting.</p>
+                <p>Over 6 months, 12 client businesses used the generator to make ads for TikTok Shop and Instagram. GMV counts the sales those ads drove, as each platform reported them.</p>
             </CaseSection>
             <CaseSection title="The problem">
                 <p>Syrex Consulting runs paid social for e-commerce brands. Each client needed a steady stream of UGC-style video ads, and making them by hand could not keep up with demand or budget.</p>
