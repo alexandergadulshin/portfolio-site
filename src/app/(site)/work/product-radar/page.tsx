@@ -32,14 +32,14 @@ export default function ProductRadar() {
                 <p>{`The build took 2 days from start to live. On its first run the dashboard scanned 53 creators and 3,942 of their ad videos, and surfaced 592 winning products for the client to review, 35 of them new that day. The client now opens one page instead of watching videos for hours.`}</p>
             </CaseSection>
             <CaseSection title="The problem">
-                <p>{`The client follows a list of creators and needs to know which products are winning for them. The raw material is thousands of ad videos, and the client has no time to watch them. The client knew which signals mattered, and no tool existed to read them.`}</p>
+                <p>{`The client follows a list of creators and needs to know which products are winning for them. The raw material is thousands of ad videos, far more than anyone on their team can watch. They knew which signals mattered, and no tool existed to read them.`}</p>
             </CaseSection>
             <CaseSection title="What I built">
                 <p>{`A tool that scans the creator list on a schedule and filters the products by the signals the client set. The results land in a spreadsheet and a private dashboard, and a daily digest brings each day's new finds to the client's chat. The client checks one page with morning coffee and gets on with the day.`}</p>
                 <DashboardShots shots={productRadarShots} caption="The dashboard: winning products, ranked by the signals the client set." alt="Screenshot of the product research dashboard" />
             </CaseSection>
             <CaseSection title="What this means for your business">
-                <p>{`The dashboard replaced a research task, not a person. If your business has a task that eats hours and follows rules you can write down, it is a candidate for the same treatment, and the 2 day build is the standard I aim for.`}</p>
+                <p>{`The dashboard took over a research task and left the people in place. If your business has a task that eats hours and follows rules you can write down, it is a candidate for the same treatment, and the 2 day build is the standard I aim for.`}</p>
                 <div className="d-flex flex-wrap gap-3 mt-30">
                     <BookCallButton />
                     <CtaButton href="/services" label="See what I offer" className="tp-btn tp-btn-grey" />

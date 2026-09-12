@@ -4,7 +4,7 @@ import SmartLink from "@/components/common/SmartLink";
 const services = [
     {
         title: "01. Website design and builds",
-        text: "A fast site with one clear action per page. I design and build it in Next.js, then hand you the keys with documentation you can follow without me.",
+        text: "A fast site with one clear action per page. I design and build it, then hand you the keys and documentation you can follow without me.",
     },
     {
         title: "02. AI tool installation",

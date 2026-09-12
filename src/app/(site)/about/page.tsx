@@ -39,14 +39,14 @@ export default function About() {
             </div>
 
             <CaseSection title="How I got here">
-                <p>I started building websites for friends&apos; side businesses in high school. Each build taught me the same lesson. The code mattered less than the words on the page. A site succeeds when a stranger can land on it and act without help.</p>
-                <p>I kept building at UC Santa Barbara. In my second year, Syrex Consulting took me on through a referral, and I built a UGC video generator there. Over 6 months, 12 client businesses made video ads with it for TikTok Shop and Instagram. Those ads drove $284,000 in gross merchandise value. I have treated the work as a practice since. The full story is on the <Link href="/work/syrex">Syrex case study</Link> page.</p>
+                <p>I started building websites for friends&apos; side businesses in high school. Each build taught me the same lesson: the code mattered less than the words on the page, and a site succeeds when a stranger can land on it and act without help.</p>
+                <p>I kept building at UC Santa Barbara. In my second year, Syrex Consulting took me on through a referral, and I built a UGC video generator there. Over 6 months, 12 client businesses made video ads with it for TikTok Shop and Instagram. Those ads drove $284,000 in gross merchandise value. I have run it as a business since. The full story is on the <Link href="/work/syrex">Syrex case study</Link> page.</p>
                 <p>The writing coursework feeds the technical work. The hardest part of a small business site is deciding what each page says and what it asks you to do. I train for that part in the classroom and practice the build side on real projects.</p>
             </CaseSection>
 
             <CaseSection title="Why this site exists">
                 <p>This site has one job. It takes you from your first visit to a booked call, and each page points there.</p>
-                <p>I built it for the person who runs the business and everything else. You do not have an IT department. An agency pitch asks for an afternoon you do not have. Each page answers two questions. Can I do the work you need, and what does it cost to find out? The case studies answer the first with numbers. The free call answers the second. You should leave with a clear idea of what I would build for you, and you should spend nothing to get it.</p>
+                <p>I built it for the person who runs the business and everything else. You have no IT department, and an agency pitch asks for an afternoon you do not have. Each page answers two questions: can I do the work you need, and what does it cost to find out? The case studies answer the first with numbers, and the free call answers the second. You should leave with a clear idea of what I would build for you, and it should cost you nothing to get it.</p>
             </CaseSection>
 
             <CaseSection title="How I write it">
@@ -57,7 +57,7 @@ export default function About() {
             </CaseSection>
 
             <CaseSection title="How I built it">
-                <p>I designed and built the site in Next.js and host it on Vercel. That choice is part of the pitch. If I ask you to trust me with your site, mine has to hold up first. Treat this page as a work sample. The load time and the words on this screen show what a build from me looks like.</p>
+                <p>I designed and built the site in Next.js and host it on Vercel, and that choice is part of the pitch. If I ask you to trust me with your site, mine has to hold up first. Treat this page as a work sample: the load time and the words on this screen are what a build from me looks like.</p>
             </CaseSection>
 
             <CaseSection title="Where to go next">

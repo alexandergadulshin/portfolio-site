@@ -29,7 +29,7 @@ export default function VideoBot() {
             />
             <CaseBanner src="/assets/img/site/banner-video-bot.jpg" alt="UGC video bot" />
             <CaseSection title="The result">
-                <p>{`Clients pay to use this bot to make their product videos. Each client connects their own accounts and runs the bot on their own credits. They get the output without me in the loop. People with a business to run choose to keep using it.`}</p>
+                <p>{`Clients pay to use this bot to make their product videos. Each client connects their own accounts and runs the bot on their own credits. They get the output without me in the loop. Busy owners keep choosing it.`}</p>
             </CaseSection>
             <CaseSection title="The problem">
                 <p>{`Product videos are the fuel of social selling, and sellers burn through them. Making one the manual way means filming it and editing it, and that costs hours per cut. The stream dries up the moment the owner gets busy, which is always.`}</p>

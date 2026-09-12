@@ -34,17 +34,17 @@ export default function SyrexCaseStudy() {
                 <p>Over 6 months, 12 client businesses used the generator to make ads for TikTok Shop and Instagram. GMV counts the sales those ads drove, measured in each platform&apos;s own reporting.</p>
             </CaseSection>
             <CaseSection title="The problem">
-                <p>Syrex Consulting runs paid social for e-commerce brands. Each client needed a steady stream of UGC-style video ads, and manual production could not keep pace with demand or budget.</p>
-                <p>One ad took a creator, plus 2 days of scripting and editing. Media buyers wanted 10 variations to test, not one polished cut.</p>
+                <p>Syrex Consulting runs paid social for e-commerce brands. Each client needed a steady stream of UGC-style video ads, and making them by hand could not keep up with demand or budget.</p>
+                <p>One ad took a creator, plus 2 days of scripting and editing. Media buyers wanted 10 variations to test rather than one polished cut.</p>
             </CaseSection>
             <CaseSection title="What I built">
                 <p>A generator that turns a product page and a short brief into a batch of short video ads. It writes the script, reads it in a chosen voice, lays on-screen text over product shots and stock clips, and exports variations for testing.</p>
-                <p>The pipeline runs on code I wrote. A language model writes the scripts and a text-to-speech model reads them. A video tool assembles each cut. Media buyers pick winners inside a web dashboard I built for them.</p>
+                <p>I wrote the pipeline myself. A language model drafts each script and a voice model reads it. A video tool then assembles the cut, and media buyers pick winners inside a web dashboard I built for them.</p>
                 <DashboardShots shots={syrexShots} caption="The dashboard: the client's team reviews each batch and picks the winners." alt="Screenshot of the posting tool setup screen" />
             </CaseSection>
             <CaseSection title="My role">
                 <p>I owned the build end to end, from the first prototype to the version clients used, and worked with the Syrex founder on what the ads needed to say.</p>
-                <p>The decision that shaped the outcome was to generate 10 variations per product instead of one finished ad. Media buyers found winners in each batch that no single cut would have shown.</p>
+                <p>The choice that mattered most was to generate 10 variations per product instead of one finished ad. Media buyers found winners in each batch that no single cut would have shown.</p>
             </CaseSection>
             <CaseSection title="What this means for your business">
                 <p>The same approach scales down. One tool, installed at the right spot in your workflow, pays for itself once it removes a bottleneck. If your bottleneck is content or follow-up, I can find the spot.</p>
