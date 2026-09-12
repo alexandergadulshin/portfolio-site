@@ -12,7 +12,7 @@ const papers = [
     {
         href: "/writing/myanimelist-analysis",
         title: "A rhetorical analysis of MyAnimeList",
-        text: "A fan database that keeps its veterans and loses its newcomers, I read MyAnimeList through Foss’s framework for rhetorical criticism.",
+        text: "A fan database that keeps its veterans and loses its newcomers and I read MyAnimeList through Foss’s framework for rhetorical criticism.",
     },
 ];
 

@@ -35,7 +35,7 @@ const ServicesList = () => {
                 <div className="row align-items-end">
                     <div className="col-xxl-11 col-xl-12">
                         <div className="tp-about-title-wrap mb-30">
-                            <h2 className="tp-section-title reveal-text">Most small business sites try to say to much, I build sites that load fast and point each page at one action.</h2>
+                            <h2 className="tp-section-title reveal-text">Most small business sites try to say to much and I build sites that load fast and point each page at one action.</h2>
                         </div>
                     </div>
                 </div>

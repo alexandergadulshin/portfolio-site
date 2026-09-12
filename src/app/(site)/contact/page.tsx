@@ -26,8 +26,8 @@ export default function Contact() {
                         </div>
                         <div className="col-xl-6">
                             <div className="tp-pd-2-overview-wrap tp_fade_anim" data-delay=".4">
-                                <p>Tell me about your business and what holds it back, I read each message and reply within one business day.</p>
-                                <p>Email me at <a href={`mailto:${site.email}`}>{site.email}</a> with a sentence or two about your business, no need for a pitch.</p>
+                                <p>Tell me about your business and what holds it back and I read each message and reply within one business day.</p>
+                                <p>Email me at <a href={`mailto:${site.email}`}>{site.email}</a> with a sentence or two about your business and no need for a pitch.</p>
                                 <div className="mt-30">
                                     <BookCallButton className="tp-btn" href={contactPageBookingHref} />
                                 </div>

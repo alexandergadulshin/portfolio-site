@@ -4,7 +4,7 @@ import SmartLink from "@/components/common/SmartLink";
 const services = [
     {
         title: "01. Website design and builds",
-        text: "A fast site with one clear action per page, I design and build the site and give you the keys and the documentation that lets you run it all without me.",
+        text: "A fast site with one clear action per page and I design and build the site and give you the keys and the documentation that lets you run it all without me.",
     },
     {
         title: "02. AI tool installation",
