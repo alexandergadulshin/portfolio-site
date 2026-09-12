@@ -19,7 +19,7 @@ export default function Services() {
                     <div className="row">
                         <div className="col-xxl-8 offset-xxl-2 col-xl-10">
                             <div className="inner-service-banner-title-wrap tp_fade_anim" data-delay=".3">
-                                <h1 className="about-us-title tp-ff-sequel-medium">Two services, one goal: remove the bottleneck that costs your business the most time or money.</h1>
+                                <h1 className="about-us-title tp-ff-sequel-medium">Two services, one goal. Remove the bottleneck that costs your business the most time or money.</h1>
                             </div>
                         </div>
                     </div>

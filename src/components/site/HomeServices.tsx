@@ -4,11 +4,11 @@ import SmartLink from "@/components/common/SmartLink";
 const services = [
     {
         title: "01. Website design and builds",
-        text: "A fast site with one clear action per page. I design and build it, then hand you the keys and documentation you can follow without me.",
+        text: "A fast site with one clear action per page. I design and build it then hand you the keys and some documentation you can follow without me.",
     },
     {
         title: "02. AI tool installation",
-        text: "I find the tools that fit your workflow and set them up. Then I train you until you run them on your own.",
+        text: "I find the tools that fit how you work and set them up, then I train you until you can run them on your own.",
     },
 ];
 

@@ -15,7 +15,7 @@ const SiteCta = () => {
                         <div className="col-lg-7">
                             <div className="ca-cta-title-wrap p-relative mb-40">
                                 <h2 className="ca-section-title fs-100 text-white lh-1 mb-30 reveal-text">Start with<br /> a call.</h2>
-                                <p className="text-white mb-40">Tell me about your business and I will tell you what I would build first. The call is free, and you decide what happens next.</p>
+                                <p className="text-white mb-40">Tell me about your business and I&apos;ll tell you what I&apos;d build first. The call is free and you decide what happens next.</p>
                                 <div className="tp_fade_anim" data-delay=".4" data-fade-from="bottom" data-ease="bounce">
                                     <BookCallButton className="tp-btn tp-btn-red tp-ff-inter" />
                                 </div>

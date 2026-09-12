@@ -19,7 +19,7 @@ const papers = [
 export default function Writing() {
     return (
         <main>
-            <PageIntro label="Writing" title="Writing" lede="On a small business site the words do the selling. The paper below is the analysis behind the words on this one." />
+            <PageIntro label="Writing" title="Writing" lede="On a small business site the words do the selling, the paper below is the analysis behind the words on this one." />
             <div className="tp-portfolio-inner-ptb pb-90">
                 <div className="container">
                     <div className="row gx-60">
