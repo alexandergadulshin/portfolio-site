@@ -16,7 +16,7 @@ export default function NotFound() {
                                     <h4 className="tp-error-title">404</h4>
                                     <div className="tp-error-content">
                                         <h4 className="tp-error-title-sm">This page does not exist.</h4>
-                                        <p>The address might have a typo or the page moved and the home page has the map of the site.</p>
+                                        <p>The address might contain a typo or the page got moved and the home page contains the map of the site.</p>
                                         <SmartLink className="tp-btn" href="/">Go to the home page</SmartLink>
                                     </div>
                                 </div>

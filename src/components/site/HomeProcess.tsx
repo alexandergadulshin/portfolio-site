@@ -9,7 +9,7 @@ const HomeProcess = () => {
                     <div className="col-xxl-9 col-xl-10">
                         <div className="mp-awards-title-wrap mb-60">
                             <h2 className="tp-section-title fs-72 tp-ff-sequel-roman reveal-text">
-                                The owner comes to me with a bottleneck and I remove it using a website or an AI tool then pass the keys over to them.
+                                There&apos;s a bottleneck the owner tells me about and I remove it using a website or an AI tool then give them the keys.
                             </h2>
                         </div>
                     </div>
