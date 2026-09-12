@@ -124,7 +124,9 @@ site copy:
   case study), `/work/product-radar` and `/work/video-bot` (added
   2026-09-11 from a brief with hard rules: no client names, no dollar
   figures, no model or vendor names, no product screenshots on those two
-  pages), `/work/client-websites` (in-progress stub). The home page
+  pages), and a "Client website builds" card that points at `/services`
+  until a client build ships (the stub route was removed on 2026-09-11).
+  The home page
   features Syrex and the dashboard. `src/components/site/MoreWork.tsx`
   renders the other case studies under each one.
 - `/services`, `/about` (500+ words, copy fixed by the user's brief of

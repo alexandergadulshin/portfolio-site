@@ -27,8 +27,7 @@ export const workItems: WorkItem[] = [
         height: 430,
     },
     {
-        // Sends visitors to the services page. The stub at
-        // /work/client-websites stays as a route but is no longer linked.
+        // Sends visitors to the services page until a client build ships.
         href: "/services",
         title: "Client website builds",
         tag: "In progress",

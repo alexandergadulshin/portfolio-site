@@ -39,8 +39,8 @@ export default function SyrexCaseStudy() {
             </CaseSection>
             <CaseSection title="What I built">
                 <p>A generator that turns a product page and a short brief into a batch of short video ads. It writes the script, reads it in a chosen voice, lays on-screen text over product shots and stock clips, and exports variations for testing.</p>
-                <p>The pipeline runs on Python. A language model writes the scripts and a text-to-speech model reads them. A video tool assembles each cut. Media buyers pick winners inside a web dashboard I built for them.</p>
-                <DashboardShots shots={syrexShots} caption="The setup screen of the posting tool. A shared Drive folder feeds each batch into the library for review." alt="Screenshot of the posting tool setup screen" />
+                <p>The pipeline runs on code I wrote. A language model writes the scripts and a text-to-speech model reads them. A video tool assembles each cut. Media buyers pick winners inside a web dashboard I built for them.</p>
+                <DashboardShots shots={syrexShots} caption="The dashboard: the client's team reviews each batch and picks the winners." alt="Screenshot of the posting tool setup screen" />
             </CaseSection>
             <CaseSection title="My role">
                 <p>I owned the build end to end, from the first prototype to the version clients used, and worked with the Syrex founder on what the ads needed to say.</p>
