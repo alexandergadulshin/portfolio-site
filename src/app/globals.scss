@@ -378,3 +378,18 @@ html.site-menu-open, html.site-menu-open body { overflow: hidden !important; }
 .site-browser-bar span { width: 10px; height: 10px; border-radius: 50%; background: #d4d4d4; }
 .site-browser-body { background: #fafafa; }
 .site-browser-body img { display: block; width: 100%; height: auto; }
+
+/* The spinning badge in the home hero links to the booking page. */
+.site-badge-link {
+  display: inline-block;
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+}
+.site-badge-link:hover,
+.site-badge-link:focus-visible {
+  transform: scale(1.06);
+}
+.site-badge-link:focus-visible {
+  outline: 2px solid #09090b;
+  outline-offset: 4px;
+}

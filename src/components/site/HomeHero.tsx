@@ -4,8 +4,8 @@ import Link from "next/link";
 import { site } from "@/config/site";
 import Image from "next/image";
 
-// Each tile links to the page its image points at. The booking tile
-// follows the site's booking link.
+// Each tile links to the page its image points at. The booking tile and
+// the spinning badge both follow the site's booking link.
 const tiles = [
     { src: "/assets/img/site/tile-websites.jpg", alt: "Websites", href: "/services", label: "View the services page" },
     { src: "/assets/img/site/tile-ai.jpg", alt: "AI tools", href: "/work/video-bot", label: "View the UGC video bot case study" },
@@ -25,7 +25,15 @@ const HomeHero = () => {
                 <div className="row align-items-center">
                     <div className="col-xl-3">
                         <div className="mp-hero-awards mb-30 p-relative d-inline-block tp_fade_anim" data-delay=".5" data-fade-from="bottom" data-ease="bounce">
-                            <Image width={155} height={156} className="rotate-infinite" src="/assets/img/site/badge.svg" alt="Book a call" unoptimized />
+                            {bookingIsExternal ? (
+                                <a href={bookingHref} className="site-badge-link" aria-label="Book a call" target="_blank" rel="noopener noreferrer">
+                                    <Image width={155} height={156} className="rotate-infinite" src="/assets/img/site/badge.svg" alt="" unoptimized />
+                                </a>
+                            ) : (
+                                <Link href={bookingHref} className="site-badge-link" aria-label="Book a call">
+                                    <Image width={155} height={156} className="rotate-infinite" src="/assets/img/site/badge.svg" alt="" unoptimized />
+                                </Link>
+                            )}
                         </div>
                     </div>
 
