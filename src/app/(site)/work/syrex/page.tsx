@@ -1,4 +1,6 @@
 import CaseSection from "@/components/site/CaseSection";
+import DashboardShots from "@/components/site/DashboardShots";
+import { syrexShots } from "@/data/syrex-shots";
 import BookCallButton from "@/components/site/BookCallButton";
 import CaseBanner from "@/components/site/CaseBanner";
 import CaseIntro from "@/components/site/CaseIntro";
@@ -38,6 +40,7 @@ export default function SyrexCaseStudy() {
             <CaseSection title="What I built">
                 <p>A generator that turns a product page and a short brief into a batch of short video ads. It writes the script, reads it in a chosen voice, lays on-screen text over product shots and stock clips, and exports variations for testing.</p>
                 <p>The pipeline runs on Python. A language model writes the scripts, a text-to-speech model reads them, and FFmpeg assembles each cut. Media buyers pick winners inside a simple web dashboard built in Next.js.</p>
+                <DashboardShots shots={syrexShots} caption="The dashboard: the client's team reviews each batch and picks the winners." alt="Screenshot of the video pipeline dashboard" />
             </CaseSection>
             <CaseSection title="My role">
                 <p>I owned the build end to end, from the first prototype to the version clients used, and worked with the Syrex founder on what the ads needed to say.</p>
