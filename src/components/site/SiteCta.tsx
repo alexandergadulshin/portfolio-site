@@ -1,4 +1,4 @@
-import CtaButton from "./CtaButton";
+import BookCallButton from "@/components/site/BookCallButton";
 import Image from "next/image";
 
 // Closing invitation, from the template's Digital Studio call to action.
@@ -17,7 +17,7 @@ const SiteCta = () => {
                                 <h2 className="ca-section-title fs-100 text-white lh-1 mb-30 reveal-text">Start with<br /> a call.</h2>
                                 <p className="text-white mb-40">Tell me about your business and I will tell you what I would build first. The call costs nothing and comes with no obligation.</p>
                                 <div className="tp_fade_anim" data-delay=".4" data-fade-from="bottom" data-ease="bounce">
-                                    <CtaButton href="/contact" label="Book a call" className="tp-btn tp-btn-red tp-ff-inter" />
+                                    <BookCallButton className="tp-btn tp-btn-red tp-ff-inter" />
                                 </div>
                                 <Image width={376} height={376} className="ca-cta-shape-2 d-none d-sm-inline-block" src="/assets/img/cta/shape-3.png" alt="" />
                             </div>

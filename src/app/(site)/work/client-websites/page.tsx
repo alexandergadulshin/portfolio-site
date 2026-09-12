@@ -1,4 +1,5 @@
 import CaseSection from "@/components/site/CaseSection";
+import BookCallButton from "@/components/site/BookCallButton";
 import CaseIntro from "@/components/site/CaseIntro";
 import CtaButton from "@/components/site/CtaButton";
 import MoreWork from "@/components/site/MoreWork";
@@ -23,7 +24,7 @@ export default function ClientWebsites() {
                 <p>Before-and-after screenshots with load times, and the one action each site points at. I am collecting client permissions now. Until then, the Syrex case study shows how I work.</p>
                 <div className="d-flex flex-wrap gap-3 mt-30">
                     <CtaButton href="/work/syrex" label="Read the Syrex case study" />
-                    <CtaButton href="/contact" label="Book a call" className="tp-btn tp-btn-grey" />
+                    <BookCallButton className="tp-btn tp-btn-grey" />
                 </div>
             </CaseSection>
             <MoreWork current="/work/client-websites" />

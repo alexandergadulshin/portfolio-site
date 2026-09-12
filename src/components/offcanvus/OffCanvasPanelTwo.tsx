@@ -1,8 +1,8 @@
 "use client";
 import { useEffect, useState } from "react";
+import BookCallButton from "@/components/site/BookCallButton";
 import { ScrollSmoother } from "gsap/ScrollSmoother";
 import BrandLogo from "@/components/common/BrandLogo";
-import CtaButton from "@/components/site/CtaButton";
 import StickyMainMenu from "../layout/StickyMainMenu";
 import useGlobalContext from "@/hooks/useContext";
 import { site } from "@/config/site";
@@ -60,9 +60,7 @@ const OffCanvasPanelTwo = () => {
                     </div>
 
                     <div className="site-menu-cta">
-                        <span onClick={handleClose}>
-                            <CtaButton href="/contact" label="Book a call" className="tp-btn tp-btn-red" />
-                        </span>
+                        <BookCallButton className="tp-btn tp-btn-red" onClick={handleClose} />
                     </div>
 
                     <div className="site-menu-contact">

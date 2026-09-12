@@ -1,4 +1,5 @@
 import CtaButton from "@/components/site/CtaButton";
+import BookCallButton, { contactPageBookingHref } from "@/components/site/BookCallButton";
 import { site } from "@/config/site";
 import { Metadata } from "next";
 
@@ -30,12 +31,7 @@ export default function Contact() {
                                     Email me at <a href={`mailto:${site.email}`}>{site.email}</a> with a sentence or two about your business. You do not need a long pitch.
                                 </p>
                                 <div className="mt-30">
-                                    <a href={site.bookingUrl || `mailto:${site.email}?subject=Book%20a%20call`} className="tp-btn">
-                                        <span>
-                                            <span className="text-1">Book a call</span>
-                                            <span className="text-2">Book a call</span>
-                                        </span>
-                                    </a>
+                                    <BookCallButton className="tp-btn" href={contactPageBookingHref} />
                                 </div>
                                 <div className="mt-20">
                                     <CtaButton href={`mailto:${site.email}`} label="Email me" className="tp-btn tp-btn-grey" />

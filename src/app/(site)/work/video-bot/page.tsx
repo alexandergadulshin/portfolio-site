@@ -1,4 +1,5 @@
 import CaseSection from "@/components/site/CaseSection";
+import BookCallButton from "@/components/site/BookCallButton";
 import CaseBanner from "@/components/site/CaseBanner";
 import CaseIntro from "@/components/site/CaseIntro";
 import CtaButton from "@/components/site/CtaButton";
@@ -38,7 +39,7 @@ export default function VideoBot() {
             <CaseSection title="What this means for your business">
                 <p>{`This bot is an installed tool at full size. It removes one task, making product videos, and it hands the keys to the person who owns the task. If your business has a bottleneck shaped like this, the call is where we find the spot.`}</p>
                 <div className="d-flex flex-wrap gap-3 mt-30">
-                    <CtaButton href="/contact" label="Book a call" />
+                    <BookCallButton />
                     <CtaButton href="/services" label="See what I offer" className="tp-btn tp-btn-grey" />
                 </div>
             </CaseSection>

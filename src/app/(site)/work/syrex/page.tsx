@@ -1,4 +1,5 @@
 import CaseSection from "@/components/site/CaseSection";
+import BookCallButton from "@/components/site/BookCallButton";
 import CaseBanner from "@/components/site/CaseBanner";
 import CaseIntro from "@/components/site/CaseIntro";
 import CtaButton from "@/components/site/CtaButton";
@@ -45,7 +46,7 @@ export default function SyrexCaseStudy() {
             <CaseSection title="What this means for your business">
                 <p>The same approach scales down. One tool, installed at the right spot in your workflow, pays for itself once it removes a bottleneck. If your bottleneck is content or follow-up, I can find the spot.</p>
                 <div className="d-flex flex-wrap gap-3 mt-30">
-                    <CtaButton href="/contact" label="Book a call" />
+                    <BookCallButton />
                     <CtaButton href="/services" label="See what I offer" className="tp-btn tp-btn-grey" />
                 </div>
             </CaseSection>

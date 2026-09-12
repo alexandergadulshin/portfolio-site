@@ -41,8 +41,13 @@ site. Keep both decisions.
 ## Placeholders the user fills later
 
 - `src/config/site.ts` is the single config file: name, email, booking
-  URL, the Syrex GMV figure, location, and the public URL. Bracketed
-  values render on the live site until replaced.
+  URL, the Syrex GMV figure, location, and the public URL.
+- Booking goes to Calendly at https://calendly.com/grexcrew (set
+  2026-09-11). Every "Book a call" element renders through
+  `src/components/site/BookCallButton.tsx`, which opens that link in a
+  new tab with `rel="noopener noreferrer"`. Email
+  (mailto:grexcrew@gmail.com) remains the secondary contact mode; "Email
+  me" buttons and email links must stay mailto.
 - No `<Todo>` placeholders remain on the live site. The component in
   `src/components/site/Todo.tsx` stays for future drafts.
 - Never invent values for these. No fabricated metrics, client names, or

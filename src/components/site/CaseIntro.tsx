@@ -1,4 +1,4 @@
-import CtaButton from "./CtaButton";
+import BookCallButton from "@/components/site/BookCallButton";
 
 type Meta = { label: string; value: string };
 
@@ -26,7 +26,7 @@ const CaseIntro = ({ title, meta }: { title: React.ReactNode; meta: Meta[] }) =>
                 </div>
                 <div className="col-xl-2">
                     <div className="text-xl-end">
-                        <CtaButton href="/contact" label="Book a call" className="tp-btn tp-btn-border" />
+                        <BookCallButton className="tp-btn tp-btn-border" />
                     </div>
                 </div>
             </div>

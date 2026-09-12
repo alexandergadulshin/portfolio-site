@@ -1,4 +1,5 @@
 import { ArrowIconSix } from "@/svg/ArrowIcons";
+import BookCallButton, { bookingHref } from "@/components/site/BookCallButton";
 import CaseSection from "@/components/site/CaseSection";
 import CtaButton from "@/components/site/CtaButton";
 import SiteCta from "@/components/site/SiteCta";
@@ -28,7 +29,7 @@ export default function About() {
                                     I&apos;m {site.name}. I study computer science at UC Santa Barbara and build websites and AI tools for small businesses.
                                 </h1>
                                 <div className="pp-about-btn d-flex flex-wrap gap-3">
-                                    <CtaButton href="/contact" label="Book a call" />
+                                    <BookCallButton />
                                     <CtaButton href="/work/syrex" label="Read the Syrex case study" className="tp-btn tp-btn-grey" />
                                 </div>
                             </div>
@@ -61,7 +62,7 @@ export default function About() {
 
             <CaseSection title="Where to go next">
                 <p>If you want evidence first, read the <Link href="/work/syrex">Syrex case study</Link>. If you want the offer, the <Link href="/services">Services page</Link> lists both service lines and the four steps of a project. Every project runs on a one-page scope with a fixed price and a fixed date. If you want to see how I reason on paper, the <Link href="/writing">Writing page</Link> holds a course analysis of a site you may know.</p>
-                <p>When you are ready, <Link href="/contact">book a call</Link>. Tell me about your business and what slows it down. I will tell you what I would build first. The call costs nothing and comes with no obligation.</p>
+                <p>When you are ready, <a href={bookingHref} target="_blank" rel="noopener noreferrer">book a call</a>. Tell me about your business and what slows it down. I will tell you what I would build first. The call costs nothing and comes with no obligation.</p>
             </CaseSection>
 
             <CaseSection title="For recruiters">

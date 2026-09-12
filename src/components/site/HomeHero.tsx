@@ -1,4 +1,5 @@
 import CtaButton from "./CtaButton";
+import BookCallButton from "@/components/site/BookCallButton";
 import { site } from "@/config/site";
 import Image from "next/image";
 
@@ -35,7 +36,7 @@ const HomeHero = () => {
 
                             <div className="mp-hero-btn d-flex flex-wrap gap-2 mb-50">
                                 <div className="tp_fade_anim" data-delay=".4" data-fade-from="bottom" data-ease="bounce">
-                                    <CtaButton href="/contact" label="Book a call" className="tp-btn mb-10" />
+                                    <BookCallButton className="tp-btn mb-10" />
                                 </div>
                                 <div className="tp_fade_anim" data-delay=".6" data-fade-from="bottom" data-ease="bounce">
                                     <CtaButton href="/work/syrex" label="Read the Syrex case study" className="tp-btn tp-btn-grey mb-10" />

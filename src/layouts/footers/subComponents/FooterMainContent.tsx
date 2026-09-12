@@ -1,4 +1,4 @@
-import SmartLink from "@/components/common/SmartLink";
+import BookCallButton from "@/components/site/BookCallButton";
 import { getCurrentYear } from "@/utils/getCurrentYear";
 import { site } from "@/config/site";
 import Link from "next/link";
@@ -33,7 +33,7 @@ const FooterMainContent = () => {
 
             <div className="site-footer-cta">
                 <h2 className="tp-footer-bigtext text-white tp-ff-sequel-bold-head">
-                    <SmartLink href="/contact" className="text-scale-anim">Book a call</SmartLink>
+                    <BookCallButton className="text-scale-anim" plain />
                 </h2>
             </div>
 

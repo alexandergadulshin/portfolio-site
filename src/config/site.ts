@@ -10,9 +10,9 @@ export const site = {
   // "Email me" links across the site.
   email: "grexcrew@gmail.com",
 
-  // Your Calendly (or other) booking link. While this is "", the
-  // "Book a call" button on the contact page opens an email instead.
-  bookingUrl: "",
+  // The booking link. Every "Book a call" element opens it in a new tab.
+  // If this is ever "", the buttons fall back to the contact page.
+  bookingUrl: "https://calendly.com/grexcrew",
 
   // The Syrex GMV figure. This is the lead evidence on the home page
   // and the case study. The value below is a stand-in chosen for the

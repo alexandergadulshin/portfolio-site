@@ -1,4 +1,5 @@
 import CaseSection from "@/components/site/CaseSection";
+import BookCallButton from "@/components/site/BookCallButton";
 import CaseBanner from "@/components/site/CaseBanner";
 import CaseIntro from "@/components/site/CaseIntro";
 import CtaButton from "@/components/site/CtaButton";
@@ -37,7 +38,7 @@ export default function ProductRadar() {
             <CaseSection title="What this means for your business">
                 <p>{`The dashboard replaced a research task, not a person. That is the shape of a good tool install. If your business has a task that eats hours and follows rules you can write down, it is a candidate for the same treatment, and the 2 day build is the standard I aim for.`}</p>
                 <div className="d-flex flex-wrap gap-3 mt-30">
-                    <CtaButton href="/contact" label="Book a call" />
+                    <BookCallButton />
                     <CtaButton href="/services" label="See what I offer" className="tp-btn tp-btn-grey" />
                 </div>
             </CaseSection>
