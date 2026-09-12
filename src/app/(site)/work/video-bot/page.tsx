@@ -29,18 +29,18 @@ export default function VideoBot() {
             />
             <CaseBanner src="/assets/img/site/banner-video-bot.jpg" alt="UGC video bot" />
             <CaseSection title="The result">
-                <p>{`The clients pay for using this bot to create product videos. Each client connects their own accounts and runs the bot on their credits and receives the output without me in between. The busy owners keep returning to it.`}</p>
+                <p>{`Clients pay to use this bot to make there product videos, each client connects their own accounts and runs the bot on their own credits and gets the output without me in between and the busy owners keep coming back to it.`}</p>
             </CaseSection>
             <CaseSection title="The problem">
-                <p>{`Product videos are the fuel of social selling. The sellers burn through it and creating one by hand involves a shoot and an edit and costs several hours for each cut. The stream of videos dries up the moment the owner gets busy, and this is most of the weeks.`}</p>
+                <p>{`Product videos are the fuel of social selling and sellers burn through them, making one by hand means a shoot and an edit and that's hours per cut and the stream dries up the second the owner gets busy which is most weeks.`}</p>
             </CaseSection>
             <CaseSection title="What I built">
-                <p>{`A bot that resides where the client works, in their chat. The client inputs a product link and the bot fetches the product page and builds a scene around the product images. Then it animates the scene and creates a 5 second vertical video and delivers the file back in the same chat.`}</p>
-                <p>{`I created the pipeline that generates the video and the bot that delivers the video and I also built the setup flow that enables the client to connect their accounts in a matter of minutes and own the tool.`}</p>
-                <ExampleStrip images={videoBotStills} caption="The output. Stills from videos that the bot generated." />
+                <p>{`A bot that lives where the client already works which is their chat, the client drops in a product link and the bot reads the product page and builds a scene around the product photos then animates it into a 5 second vertical video and sends the file back in the same chat.`}</p>
+                <p>{`I built the pipeline that makes the video and the bot that delivers it and I also built the setup flow so a new client can connect their own accounts in a few minutes and the tool is theirs from day one.`}</p>
+                <ExampleStrip images={videoBotStills} caption="The output, stills from videos the bot made" />
             </CaseSection>
             <CaseSection title="What this means for your business">
-                <p>{`This bot is the same concept as my tool installations, scaled upwards into the product. It eliminates one task from the client's process, generating product videos, and passes the keys over to the one who handles it in the business. If your business has the same bottleneck, one call will be enough to pinpoint where it should go.`}</p>
+                <p>{`This bot is the same idea as my tool installs only grown into a full product, it takes one task off the plate which is making product videos and hands the keys to whoever owns that task and if your business has a bottleneck like this one call is enough to figure out where the tool goes.`}</p>
                 <div className="d-flex flex-wrap gap-3 mt-30">
                     <BookCallButton />
                     <CtaButton href="/services" label="See what I offer" className="tp-btn tp-btn-grey" />

@@ -29,17 +29,17 @@ export default function ProductRadar() {
             />
             <CaseBanner src="/assets/img/site/banner-radar.jpg" alt="Product research dashboard" />
             <CaseSection title="The result">
-                <p>{`The build took 2 days from beginning to delivery. The first scan of the dashboard returned 53 creators and 3,942 of their ad videos and filtered 592 winning products for the client to review, 35 of them new that day. Now the client opens one page rather than watching the ad videos for hours.`}</p>
+                <p>{`The build took 2 days from start to live and on the first scan the dashboard went through 53 creators and 3,942 of their ad videos and pulled out 592 winning products for the client to look at, 35 of them new that day, now the client opens one page instead of watching videos for hours.`}</p>
             </CaseSection>
             <CaseSection title="The problem">
-                <p>{`The client business follows a certain number of creators and has to understand which products perform the best in their posts. The raw material is the thousands of ad videos and no tool existed to filter them. The client knew which signals indicate success.`}</p>
+                <p>{`The client follows a bunch of creators and needs to know which products are winning for them and the raw material is thousands of ad videos, way more than anyone on their team can watch, they knew which signals mattered but there was no tool that could read them.`}</p>
             </CaseSection>
             <CaseSection title="What I built">
-                <p>{`A tool that analyzes the creator list on a schedule, and then filters the products based on the signals the client defined. It logs the findings in a spreadsheet and a web dashboard, and sends a daily summary of discoveries to the client's chat.`}</p>
-                <DashboardShots shots={productRadarShots} caption="The dashboard, with winning products ranked by the signals the client specified." alt="Screenshot of the product research dashboard" />
+                <p>{`A tool that goes through the creator list on a schedule and filters the products by the signals the client set, it logs everything in a spreadsheet and a web dashboard and sends a daily summary of the new finds to the clients chat.`}</p>
+                <DashboardShots shots={productRadarShots} caption="The dashboard with the winning products ranked by the signals the client set" alt="Screenshot of the product research dashboard" />
             </CaseSection>
             <CaseSection title="What this means for your business">
-                <p>{`The dashboard takes over the research and leaves the people in place. If your business has an important task that takes hours and can be defined in a set of rules, I can create the same tool for you. The 2 day build is the standard I aim for.`}</p>
+                <p>{`The dashboard took over the research and left the people where they were, if your business has a task that eats hours and follows rules you can write down I can build the same kind of tool for it and the 2 day build is what I aim for.`}</p>
                 <div className="d-flex flex-wrap gap-3 mt-30">
                     <BookCallButton />
                     <CtaButton href="/services" label="See what I offer" className="tp-btn tp-btn-grey" />

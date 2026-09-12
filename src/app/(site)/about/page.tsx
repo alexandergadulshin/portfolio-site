@@ -26,7 +26,7 @@ export default function About() {
                         <div className="col-xxl-7 col-xl-8 col-lg-10">
                             <div className="pp-about-content">
                                 <h1 className="pp-about-title mb-40 tp_fade_anim" data-delay=".4">
-                                    My name is {site.name}. I study computer science at UC Santa Barbara and build websites and AI tools for small businesses.
+                                    My name is {site.name}, I study computer science at UC Santa Barbara and I build websites and AI tools for small businesses.
                                 </h1>
                                 <div className="pp-about-btn d-flex flex-wrap gap-3">
                                     <BookCallButton />
@@ -39,34 +39,34 @@ export default function About() {
             </div>
 
             <CaseSection title="How I got here">
-                <p>I began building websites for friends&apos; side businesses in high school. Each project taught me the same lesson, the code does not matter as much as the words on the page and a site works when a stranger lands there and performs one action.</p>
-                <p>I kept building at UC Santa Barbara. In my second year I joined Syrex Consulting through a referral and created a UGC video generator there. Over 6 months 12 client businesses created video ads with the generator for TikTok Shop and Instagram and these ads generated $284,000 in gross merchandise value. Ever since I have been handling client projects as a separate business. The full story is in the <Link href="/work/syrex">Syrex case study</Link>.</p>
-                <p>The writing coursework feeds the technical work. The most difficult thing about a small business site is figuring out what each page is supposed to say and what action it asks of the visitor. I learn this craft in the classroom and practice building on actual projects.</p>
+                <p>I started building websites for friends side businesses back in high school and each build taught me the same lesson, the code matters less then the words on the page and a site works when a stranger can land on it and do the one thing without any help.</p>
+                <p>I kept building at UC Santa Barbara and in my second year I got into Syrex Consulting through a referral and built a UGC video generator there, over 6 months 12 client businesses made video ads with it for TikTok Shop and Instagram and those ads drove $284,000 in gross merchandise value and since then I&apos;ve been doing client work as a business of its own, the full story is in the <Link href="/work/syrex">Syrex case study</Link>.</p>
+                <p>The writing coursework feeds the technical work, the hardest part of a small business site is working out what each page is supposed to say and what its asking the visitor to do and I learn that part in the classroom and practice the building on real projects.</p>
             </CaseSection>
 
             <CaseSection title="Why this site exists">
-                <p>The site has only one purpose, to take you from the first visit to a booked call and each page points to it.</p>
-                <p>I have built it for the owner of the business and everything else. You do not have an IT department and an agency offer requires an afternoon you do not have. Each page answers two questions, can I do the work you need and what will it cost to find out? The case studies answer the first with figures and the free call answers the second. You should leave with an understanding of what I&apos;d build for you and it should cost you nothing to get it.</p>
+                <p>This site has one job which is to take you from your first visit to a booked call and each page points there.</p>
+                <p>I built it for the person who runs the business and everything else, you dont have an IT department and an agency pitch wants an afternoon you dont have so each page answers two questions, can I do the work you need and what does it cost to find out, the case studies answer the first one with numbers and the free call answers the second and you should walk away knowing what I&apos;d build for you and it should cost you nothing to find out.</p>
             </CaseSection>
 
             <CaseSection title="How I write it">
-                <p>I wrote each page on this site based on three rules and client sites follow the same ones.</p>
-                <p>Plain. The result comes first, the technology goes after. The chat assistant that answers customer questions at 2 a.m. matters to you while the model behind it does not.</p>
-                <p>Proof-first. The evidence goes before the claim. Each case study starts with a figure and I remove any sentence I am unable to back up. There is not a single &apos;seamless&apos; on this site.</p>
-                <p>Inviting. The next step remains small. Each page leads to the same booking link and the call is free.</p>
+                <p>I wrote each page on this site around three rules and client sites get the same ones.</p>
+                <p>Plain. The result comes first and the technology after, the chat assistant that answers customer questions at 2 a.m. is what matters to you and the model behind it doesnt so it stays off the page.</p>
+                <p>Proof-first. The evidence comes before the claim, each case study starts with a figure and I cut any sentence I cant back up and you wont find the word seamless anywhere on this site.</p>
+                <p>Inviting. The next step stays small, each page ends at the same booking link and the call is free and you decide what happens after.</p>
             </CaseSection>
 
             <CaseSection title="How I built it">
-                <p>I designed and built the site in Next.js and host it on Vercel. This choice forms part of the pitch, when I ask you to trust me with your site mine has to stand up first. Consider this page a work sample, the loading speed and the text on the screen is what a build of mine will look like.</p>
+                <p>I designed and built the site in Next.js and I host it on Vercel and that choice is part of the pitch, if I&apos;m asking you to trust me with your site then mine has to hold up first so treat this page as a work sample, the load time and the words on this screen is what a build from me looks like.</p>
             </CaseSection>
 
             <CaseSection title="Where to go next">
-                <p>If you seek evidence, start with the <Link href="/work/syrex">Syrex case study</Link>. If you care more about the offer, then the <Link href="/services">Services page</Link> has both of my service lines and the project process with four steps. A project runs through a one-page scope with a fixed price and a fixed date, so you know the cost and the finish before we begin. The <Link href="/writing">Writing page</Link> offers the course analysis of a site you may know.</p>
+                <p>If you want evidence start with the <Link href="/work/syrex">Syrex case study</Link> and if you care more about the offer the <Link href="/services">Services page</Link> has both service lines and the four steps of a project, a project runs on a one page scope with a fixed price and a fixed date so you know the cost and the finish before we start and the <Link href="/writing">Writing page</Link> has a course analysis of a site you might know.</p>
                 <p><a href={bookingHref} target="_blank" rel="noopener noreferrer">Book a call</a> and tell me about your business and what holds it back.</p>
             </CaseSection>
 
             <CaseSection title="For recruiters">
-                <p>The <Link href="/work/syrex">Syrex case study</Link> tells the fastest story of how I work and the <Link href="/writing">Writing page</Link> shows how I reason. Email me at <a href={`mailto:${site.email}`}>{site.email}</a> for a resume.</p>
+                <p>The <Link href="/work/syrex">Syrex case study</Link> is the fastest read on how I work and the <Link href="/writing">Writing page</Link> shows how I reason on paper, email me at <a href={`mailto:${site.email}`}>{site.email}</a> for a resume.</p>
             </CaseSection>
             <SiteCta />
         </main>

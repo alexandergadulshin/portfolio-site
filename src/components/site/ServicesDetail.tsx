@@ -2,7 +2,7 @@ const details = [
     {
         id: "web",
         title: "Website design and builds",
-        intro: "Every page gets one job, either a booking or a sale, and I cut anything that distracts from it.",
+        intro: "Every page gets one job either a booking or a sale and I cut anything that pulls away from it.",
         items: [
             "Design and build in Next.js, hosted on Vercel",
             "Copy written for your customers, in your voice",
@@ -13,7 +13,7 @@ const details = [
     {
         id: "ai",
         title: "AI tool installation",
-        intro: "AI tools help the business owners automate quotes, follow-ups, content and accounting. However, choosing and installing them requires time that most owners cannot spend. I choose and install the tools for them.",
+        intro: "AI tools save owners time on quotes and follow ups and content and bookkeeping but picking them and wiring them in takes time most owners dont have so I pick the tools and set them up.",
         items: [
             "An audit of how your work flows today",
             "Setup of the tools that fit, nothing extra",
