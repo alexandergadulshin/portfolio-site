@@ -1,4 +1,6 @@
 import CaseSection from "@/components/site/CaseSection";
+import DashboardShots from "@/components/site/DashboardShots";
+import { productRadarShots } from "@/data/product-radar-shots";
 import BookCallButton from "@/components/site/BookCallButton";
 import CaseBanner from "@/components/site/CaseBanner";
 import CaseIntro from "@/components/site/CaseIntro";
@@ -34,6 +36,7 @@ export default function ProductRadar() {
             </CaseSection>
             <CaseSection title="What I built">
                 <p>{`A tool that scans the creator list on a schedule and filters the products by the signals the client set. The results land in a spreadsheet and a private dashboard, and a daily digest brings each day's new finds to the client's chat. The client checks one page with morning coffee and gets on with the day.`}</p>
+                <DashboardShots shots={productRadarShots} caption="The dashboard: winning products, ranked by the signals the client set." />
             </CaseSection>
             <CaseSection title="What this means for your business">
                 <p>{`The dashboard replaced a research task, not a person. That is the shape of a good tool install. If your business has a task that eats hours and follows rules you can write down, it is a candidate for the same treatment, and the 2 day build is the standard I aim for.`}</p>

@@ -1,13 +1,16 @@
 import CtaButton from "./CtaButton";
-import BookCallButton from "@/components/site/BookCallButton";
+import BookCallButton, { bookingHref, bookingIsExternal } from "@/components/site/BookCallButton";
+import Link from "next/link";
 import { site } from "@/config/site";
 import Image from "next/image";
 
+// Each tile links to the page its image points at. The booking tile
+// follows the site's booking link.
 const tiles = [
-    { src: "/assets/img/site/tile-websites.jpg", alt: "Websites" },
-    { src: "/assets/img/site/tile-ai.jpg", alt: "AI tools" },
-    { src: "/assets/img/site/tile-copy.jpg", alt: "Plain copy" },
-    { src: "/assets/img/site/tile-call.jpg", alt: "Book a call" },
+    { src: "/assets/img/site/tile-websites.jpg", alt: "Websites", href: "/services", label: "View the services page" },
+    { src: "/assets/img/site/tile-ai.jpg", alt: "AI tools", href: "/work/video-bot", label: "View the UGC video bot case study" },
+    { src: "/assets/img/site/tile-copy.jpg", alt: "Plain copy", href: "/writing", label: "View the writing page" },
+    { src: "/assets/img/site/tile-call.jpg", alt: "Book a call", href: bookingHref, label: "Book a call", external: bookingIsExternal },
 ];
 
 // The wordmark breaks in exactly one place, between the first and last
@@ -47,7 +50,15 @@ const HomeHero = () => {
                                 <div className="mp-hero-magnetic-image-wrap d-flex flex-wrap flex-md-nowrap gap-3">
                                     {tiles.map((tile, idx) => (
                                         <div key={tile.src} className="mp-hero-magnetic-item mb-20 tp_fade_anim" data-delay={`.${4 + idx}`} data-fade-from="bottom" data-ease="bounce">
-                                            <Image width={256} height={196} src={tile.src} className="mp-hero-magnetic-image" alt={tile.alt} />
+                                            {tile.external ? (
+                                                <a href={tile.href} className="site-tile-link" aria-label={tile.label} target="_blank" rel="noopener noreferrer">
+                                                    <Image width={256} height={196} src={tile.src} className="mp-hero-magnetic-image" alt={tile.alt} />
+                                                </a>
+                                            ) : (
+                                                <Link href={tile.href} className="site-tile-link" aria-label={tile.label}>
+                                                    <Image width={256} height={196} src={tile.src} className="mp-hero-magnetic-image" alt={tile.alt} />
+                                                </Link>
+                                            )}
                                         </div>
                                     ))}
                                 </div>
