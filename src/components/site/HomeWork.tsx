@@ -12,7 +12,7 @@ const HomeWork = () => {
                         <h2 className="tp-section-title tp-ff-sequel-roman reveal-text mb-20">Recent work</h2>
                     </div>
                     <div className="col-lg-5">
-                        <p className="mt-20 mb-40">Results first, process second. Each case study starts with the number then shows how I got there.</p>
+                        <p className="mt-20 mb-40">Results first, process second. Each case study starts with the figure then dives into how I got there.</p>
                     </div>
                 </div>
                 <div className="row pt-30">
