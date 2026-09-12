@@ -1,4 +1,6 @@
 import CaseSection from "@/components/site/CaseSection";
+import ExampleStrip from "@/components/site/ExampleStrip";
+import { videoBotStills } from "@/data/video-bot-stills";
 import BookCallButton from "@/components/site/BookCallButton";
 import CaseBanner from "@/components/site/CaseBanner";
 import CaseIntro from "@/components/site/CaseIntro";
@@ -35,6 +37,7 @@ export default function VideoBot() {
             <CaseSection title="What I built">
                 <p>{`A bot that lives where the client already works, in their chat. The client drops a product link. The bot reads the product page and builds a scene around the product photos. Then it animates the scene into a 5 second vertical video and delivers the file back in the same chat.`}</p>
                 <p>{`I built the pipeline that makes the video and the bot that delivers it. I also built the setup flow that lets a new client connect their own accounts in minutes, so the tool is theirs from day one.`}</p>
+                <ExampleStrip images={videoBotStills} leadIn="Here is what the output looks like." caption="The output: stills from videos the bot delivered." />
             </CaseSection>
             <CaseSection title="What this means for your business">
                 <p>{`This bot is an installed tool at full size. It removes one task, making product videos, and it hands the keys to the person who owns the task. If your business has a bottleneck shaped like this, the call is where we find the spot.`}</p>

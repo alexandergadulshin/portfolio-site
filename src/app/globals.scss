@@ -330,3 +330,24 @@ html.site-menu-open, html.site-menu-open body { overflow: hidden !important; }
 .site-menu-cta { margin-top: 28px; }
 .site-menu-contact { margin-top: 32px; display: grid; gap: 6px; font-size: 15px; line-height: 1.5; color: #4a4a4a; }
 .site-menu-contact a { color: inherit; text-decoration: underline; text-underline-offset: 3px; }
+
+/* Example strip (brief 9R): 9:16 thumbnails in the flat card style */
+.site-strip { margin-top: 8px; }
+.site-strip-row {
+    display: grid;
+    grid-template-columns: repeat(var(--strip-cols, 4), minmax(0, 1fr));
+    gap: 16px;
+    margin: 4px 0 14px;
+    max-width: calc(var(--strip-cols, 4) * 180px + (var(--strip-cols, 4) - 1) * 16px);
+}
+@media (max-width: 767px) {
+    .site-strip-row { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+.site-strip-frame {
+    aspect-ratio: 9 / 16;
+    background: #f4f4f4;
+    border-radius: 12px;
+    overflow: hidden;
+}
+.site-strip-frame img { display: block; width: 100%; height: 100%; object-fit: cover; }
+.site-strip-caption { font-size: 15px; color: #7a7a7a; margin: 0; }
