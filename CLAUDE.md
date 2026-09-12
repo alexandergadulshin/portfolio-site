@@ -94,10 +94,12 @@ site copy:
   that would lose the font's kerning.
 - The closing call to action sits in `.site-cta-seat`, whose lower half is
   the footer color so the card's rounded bottom corners read as overlap.
-- Header: text brand mark from `site.name`, a "Book a call" button, and a
-  menu button that opens the off-canvas panel. Nav links live in
-  `src/data/MenuRenderer/menu-light.ts`: Work, Services, About, Writing,
-  Book a call. `SmartLink` leaves `mailto:` and other scheme links alone;
+- Header: text brand mark from `site.name`, an inline nav (Work, Services,
+  About, Writing) from 1024px, a "Book a call" button, and below 1024px a
+  menu button that opens the overlay panel with the four links, the red
+  "Book a call" pill, and a contact block. Nav links live in
+  `src/data/MenuRenderer/menu-light.ts`. The overlay locks page scroll
+  and pauses ScrollSmoother while open. `SmartLink` leaves `mailto:` and other scheme links alone;
   use it or a plain `<a>` for email links, never a bare relative string.
 
 ## Structure

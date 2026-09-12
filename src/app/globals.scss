@@ -293,3 +293,40 @@
 .site-cta-seat {
     background: linear-gradient(to bottom, transparent 0, transparent 50%, var(--color-bg-section, #09090b) 50%, var(--color-bg-section, #09090b) 100%);
 }
+
+/* Header navigation (brief 7): inline nav from 1024px, menu button below. */
+.site-header-row { display: flex; align-items: center; justify-content: space-between; gap: 16px; }
+.site-header-nav { display: none; }
+.tp-main-menu nav ul { margin: 0; padding: 0; display: flex; gap: 4px; justify-content: center; }
+.tp-main-menu nav ul li a.active { background: var(--tp-common-black, #09090b); color: var(--tp-common-white, #fff); }
+@media (min-width: 1024px) {
+    .site-header-nav { display: block; flex: 1; }
+    .tp-header-right .tp-menu-bar { display: none !important; }
+    #header-sticky { display: none !important; }
+    .site-header-btn { margin-right: 0; }
+}
+
+/* Overlay menu (brief 7): above everything, scroll locked, restyled contents. */
+.tp-offcanvas-2-area.menu-open,
+.tp-offcanvas-2-area.menu-open-temp { z-index: 100000 !important; }
+html.site-menu-open, html.site-menu-open body { overflow: hidden !important; }
+.tp-offcanvas-2-left .site-brand { color: var(--tp-common-black, #09090b) !important; }
+.site-menu-close { background: none; border: 0; padding: 0; }
+.tp-offcanvas-2-left .site-menu-links nav ul li a {
+    font-size: clamp(32px, 6vw, 44px) !important;
+    font-weight: 600 !important;
+    font-family: var(--tp-ff-sequel-semi-bold, inherit);
+    line-height: 1.3 !important;
+    letter-spacing: -0.02em !important;
+    text-transform: none !important;
+    padding: 4px 0 !important;
+    color: var(--tp-common-black, #09090b) !important;
+}
+.tp-offcanvas-2-left .site-menu-links nav ul li a::before,
+.tp-offcanvas-2-left .site-menu-links nav ul li a::after,
+.tp-offcanvas-2-left .site-menu-links nav ul li::before { display: none !important; content: none !important; }
+.tp-offcanvas-2-left .site-menu-links nav ul li.active a { color: #ff292b !important; }
+.tp-offcanvas-2-left .site-menu-links nav ul li { margin: 0 !important; padding: 0 !important; }
+.site-menu-cta { margin-top: 28px; }
+.site-menu-contact { margin-top: 32px; display: grid; gap: 6px; font-size: 15px; line-height: 1.5; color: #4a4a4a; }
+.site-menu-contact a { color: inherit; text-decoration: underline; text-underline-offset: 3px; }

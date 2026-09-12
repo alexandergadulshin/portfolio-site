@@ -3,9 +3,9 @@ import { useHeaderMenu } from "@/hooks/useHeaderMenu";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
 
-// Off-canvas menu: one flat list of links, current section marked.
-const StickyMainMenu = ({ onClose }: { onClose?: () => void }) => {
-    const menu = useHeaderMenu();
+// Overlay menu list: one flat list of section links, current one marked.
+const StickyMainMenu = ({ onClose, exclude = [] }: { onClose?: () => void; exclude?: string[] }) => {
+    const menu = useHeaderMenu().filter((item) => !exclude.includes(item.href));
     const pathname = usePathname() || "";
 
     return (
