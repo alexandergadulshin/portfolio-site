@@ -393,3 +393,10 @@ html.site-menu-open, html.site-menu-open body { overflow: hidden !important; }
   outline: 2px solid #09090b;
   outline-offset: 4px;
 }
+
+/* Services banner labels in sentence case: the template uppercases both
+   through Bootstrap's text-uppercase, and the scroll label is written in
+   lowercase in the template markup. Fix the styling, not the words. */
+.inner-service-banner-scroll .text-uppercase { text-transform: none !important; }
+.inner-service-banner-scroll a.text-uppercase { display: inline-block; }
+.inner-service-banner-scroll a.text-uppercase::first-letter { text-transform: uppercase; }

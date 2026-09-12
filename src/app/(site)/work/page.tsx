@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 export default function Work() {
     return (
         <main>
-            <PageIntro label="Selected work" title={<>Results first,<br />process second</>} lede="Each case study opens with the number that matters and then shows how the build produced it." />
+            <PageIntro label="Selected work" title={<>Results first,<br />process second</>} lede="Each build opens with its proof and shows the work behind it." />
             <div className="tp-portfolio-inner-ptb pb-90">
                 <div className="container">
                     <div className="row gx-60">

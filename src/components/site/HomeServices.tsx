@@ -20,7 +20,7 @@ const HomeServices = () => {
                     <div className="col-lg-8">
                         <div className="mp-blog-title-wrap mb-30">
                             <h2 className="tp-section-title tp-ff-sequel-roman reveal-text">
-                                Two services, <br /> one goal.
+                                Two ways to <br /> remove a bottleneck.
                             </h2>
                         </div>
                     </div>

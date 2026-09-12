@@ -12,14 +12,14 @@ const papers = [
     {
         href: "/writing/myanimelist-analysis",
         title: "A rhetorical analysis of MyAnimeList",
-        text: "How a fan database persuades new visitors to stay, read through Foss’s framework for rhetorical criticism.",
+        text: "A fan database that keeps its veterans and loses its newcomers. I read MyAnimeList through Foss’s framework for rhetorical criticism.",
     },
 ];
 
 export default function Writing() {
     return (
         <main>
-            <PageIntro label="Writing" title="Writing" lede="Copy carries the sale on a small business site. This paper shows the analysis behind the voice on this one." />
+            <PageIntro label="Writing" title="Writing" lede="On a small business site the words do the selling. The paper below is the analysis behind the words on this one." />
             <div className="tp-portfolio-inner-ptb pb-90">
                 <div className="container">
                     <div className="row gx-60">

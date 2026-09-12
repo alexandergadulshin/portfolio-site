@@ -29,18 +29,18 @@ export default function VideoBot() {
             />
             <CaseBanner src="/assets/img/site/banner-video-bot.jpg" alt="UGC video bot" />
             <CaseSection title="The result">
-                <p>{`Clients pay to use this bot to make their product videos. Each client connects their own accounts, runs the bot on their own credits, and gets the output without me in the loop. That is the plainest proof a tool can offer. People with a business to run choose to keep using it.`}</p>
+                <p>{`Clients pay to use this bot to make their product videos. Each client connects their own accounts and runs the bot on their own credits. They get the output without me in the loop. People with a business to run choose to keep using it.`}</p>
             </CaseSection>
             <CaseSection title="The problem">
-                <p>{`Product videos are the fuel of social selling, and sellers need a steady stream of them. Making one the manual way means filming it and editing it, and that costs hours per cut. The stream dries up the moment the owner gets busy, which is always.`}</p>
+                <p>{`Product videos are the fuel of social selling, and sellers burn through them. Making one the manual way means filming it and editing it, and that costs hours per cut. The stream dries up the moment the owner gets busy, which is always.`}</p>
             </CaseSection>
             <CaseSection title="What I built">
                 <p>{`A bot that lives where the client already works, in their chat. The client drops a product link. The bot reads the product page and builds a scene around the product photos. Then it animates the scene into a 5 second vertical video and delivers the file back in the same chat.`}</p>
                 <p>{`I built the pipeline that makes the video and the bot that delivers it. I also built the setup flow that lets a new client connect their own accounts in minutes, so the tool is theirs from day one.`}</p>
-                <ExampleStrip images={videoBotStills} leadIn="Here is what the output looks like." caption="The output: stills from videos the bot delivered." />
+                <ExampleStrip images={videoBotStills} caption="The output: stills from videos the bot delivered." />
             </CaseSection>
             <CaseSection title="What this means for your business">
-                <p>{`This bot is an installed tool at full size. It removes one task, making product videos, and it hands the keys to the person who owns the task. If your business has a bottleneck shaped like this, the call is where we find the spot.`}</p>
+                <p>{`This bot is an installed tool at full size. It removes one task, making product videos, and it hands the keys to the person who owns the task. If your business has a bottleneck shaped like this, one call is enough to place the tool.`}</p>
                 <div className="d-flex flex-wrap gap-3 mt-30">
                     <BookCallButton />
                     <CtaButton href="/services" label="See what I offer" className="tp-btn tp-btn-grey" />

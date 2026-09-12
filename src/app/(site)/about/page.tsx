@@ -39,14 +39,14 @@ export default function About() {
             </div>
 
             <CaseSection title="How I got here">
-                <p>I started building websites for friends&apos; side businesses in high school. Every build taught me the same lesson. A site does not win because of the code. It wins when a stranger can land on it and act without help.</p>
-                <p>I kept building at UC Santa Barbara. In my second year, a referral brought me to Syrex Consulting, where I built a UGC video generator. Over six months, twelve client businesses used it to make video ads for TikTok Shop and Instagram. Those ads drove $284,000 in gross merchandise value. The project turned a hobby into a practice. The full story is on the <Link href="/work/syrex">Syrex case study</Link> page.</p>
-                <p>The writing coursework is not a detour from the technical work. The hardest part of a small business site is deciding what each page says and what it asks you to do. I train for that part in the classroom and practice the build side on real projects.</p>
+                <p>I started building websites for friends&apos; side businesses in high school. Each build taught me the same lesson. The code mattered less than the words on the page. A site succeeds when a stranger can land on it and act without help.</p>
+                <p>I kept building at UC Santa Barbara. In my second year, Syrex Consulting took me on through a referral, and I built a UGC video generator there. Over six months, twelve client businesses made video ads with it for TikTok Shop and Instagram. Those ads drove $284,000 in gross merchandise value. I have treated the work as a practice since. The full story is on the <Link href="/work/syrex">Syrex case study</Link> page.</p>
+                <p>The writing coursework feeds the technical work. The hardest part of a small business site is deciding what each page says and what it asks you to do. I train for that part in the classroom and practice the build side on real projects.</p>
             </CaseSection>
 
             <CaseSection title="Why this site exists">
-                <p>This site has one job. It takes you from your first visit to a booked call. Every page points there.</p>
-                <p>I built it for the person who runs the business and everything else. You do not have an IT department. You do not have an afternoon to spend decoding an agency pitch. So each page answers two questions. Can I do the work you need, and what does it cost to find out? The case studies answer the first with numbers. The free call answers the second. You should leave with a clear idea of what I would build for you, and you should spend nothing to get it.</p>
+                <p>This site has one job. It takes you from your first visit to a booked call, and each page points there.</p>
+                <p>I built it for the person who runs the business and everything else. You do not have an IT department. An agency pitch asks for an afternoon you do not have. Each page answers two questions. Can I do the work you need, and what does it cost to find out? The case studies answer the first with numbers. The free call answers the second. You should leave with a clear idea of what I would build for you, and you should spend nothing to get it.</p>
             </CaseSection>
 
             <CaseSection title="How I write it">
@@ -61,8 +61,8 @@ export default function About() {
             </CaseSection>
 
             <CaseSection title="Where to go next">
-                <p>If you want evidence first, read the <Link href="/work/syrex">Syrex case study</Link>. If you want the offer, the <Link href="/services">Services page</Link> lists both service lines and the four steps of a project. Every project runs on a one-page scope with a fixed price and a fixed date. If you want to see how I reason on paper, the <Link href="/writing">Writing page</Link> holds a course analysis of a site you may know.</p>
-                <p>When you are ready, <a href={bookingHref} target="_blank" rel="noopener noreferrer">book a call</a>. Tell me about your business and what slows it down. I will tell you what I would build first. The call costs nothing and comes with no obligation.</p>
+                <p>Start with the <Link href="/work/syrex">Syrex case study</Link> if you want evidence of results. If the offer matters more, the <Link href="/services">Services page</Link> lists both service lines and the four steps of a project. A project runs on a one-page scope with a fixed price and a fixed date, so you know the cost and the finish before we start. The <Link href="/writing">Writing page</Link> holds a course analysis of a site you may know.</p>
+                <p><a href={bookingHref} target="_blank" rel="noopener noreferrer">Book a call</a> when you are ready. Tell me about your business and what slows it down.</p>
             </CaseSection>
 
             <CaseSection title="For recruiters">

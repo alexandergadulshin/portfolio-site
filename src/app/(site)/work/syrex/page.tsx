@@ -35,16 +35,16 @@ export default function SyrexCaseStudy() {
             </CaseSection>
             <CaseSection title="The problem">
                 <p>Syrex Consulting runs paid social for e-commerce brands. Each client needed a steady stream of UGC-style video ads, and manual production could not keep pace with demand or budget.</p>
-                <p>One ad took a creator, a script, and two days of editing. Media buyers wanted ten variations to test, not one polished cut.</p>
+                <p>One ad took a creator, plus two days of scripting and editing. Media buyers wanted ten variations to test, not one polished cut.</p>
             </CaseSection>
             <CaseSection title="What I built">
                 <p>A generator that turns a product page and a short brief into a batch of short video ads. It writes the script, reads it in a chosen voice, lays on-screen text over product shots and stock clips, and exports variations for testing.</p>
-                <p>The pipeline runs on Python. A language model writes the scripts, a text-to-speech model reads them, and FFmpeg assembles each cut. Media buyers pick winners inside a simple web dashboard built in Next.js.</p>
+                <p>The pipeline runs on Python. A language model writes the scripts and a text-to-speech model reads them. FFmpeg assembles each cut. Media buyers pick winners inside a web dashboard built in Next.js.</p>
                 <DashboardShots shots={syrexShots} caption="The setup screen of the posting tool. A shared Drive folder feeds each batch into the library for review." alt="Screenshot of the posting tool setup screen" />
             </CaseSection>
             <CaseSection title="My role">
                 <p>I owned the build end to end, from the first prototype to the version clients used, and worked with the Syrex founder on what the ads needed to say.</p>
-                <p>The decision that shaped the outcome was to generate ten variations per product instead of one finished ad. Testing the batch found winners that no single cut would have.</p>
+                <p>The decision that shaped the outcome was to generate ten variations per product instead of one finished ad. Media buyers found winners in each batch that no single cut would have shown.</p>
             </CaseSection>
             <CaseSection title="What this means for your business">
                 <p>The same approach scales down. One tool, installed at the right spot in your workflow, pays for itself once it removes a bottleneck. If your bottleneck is content or follow-up, I can find the spot.</p>

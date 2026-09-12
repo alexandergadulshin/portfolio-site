@@ -6,7 +6,7 @@ const ProcessSteps = () => (
             <div className="row">
                 <div className="col-lg-12">
                     <div className="tp-pd-2-step-heading pb-60 tp_fade_anim" data-delay=".3">
-                        <h3 className="tp-pd-2-step-title reveal-text">How a project runs. <br />Four steps, one fixed price, one date.</h3>
+                        <h3 className="tp-pd-2-step-title reveal-text">A project runs in four steps, with the price and the date fixed up front.</h3>
                     </div>
                 </div>
             </div>
